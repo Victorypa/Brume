@@ -1,0 +1,23 @@
+@import "global/variables";
+@import "global/fonts";
+
+h1 {
+color: red;
+font-family: "Playfair Display"
+}
+
+html, body {
+  height: 100%;
+  
+	font-size: $def-fnz;	
+}
+
+body {
+  min-width: 320px;
+
+  position: relative;
+
+  line-height: 1.65;
+}
+
+@import "global/container";
