@@ -22,7 +22,7 @@ var sourcemaps = require('gulp-sourcemaps');
 
 // Таск css.
 gulp.task("css", function () {
-  return gulp.src("source/sass/style.{sass, scss}") // Берет на вход основной файл scss, где происходят импорты
+  return gulp.src("source/sass/style.scss") // Берет на вход основной файл scss, где происходят импорты
     .pipe(sourcemaps.init()) // Иницициализируем плагин для генерации source map.
       .pipe(plumber()) // Плагин для отслеживания ошибок
       .pipe(sass()) // Переводим из sass в css
@@ -127,7 +127,7 @@ gulp.task("server", function () {
     ui: false
   });
   // Смотрит за файлами и перезагружает, если есть изменение
-  gulp.watch("source/sass/**/*.{sass.scss}", gulp.series("css", "refresh"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("css", "refresh"));
   gulp.watch("source/img/**/*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/js/*.js", gulp.series("scripts", "refresh"));

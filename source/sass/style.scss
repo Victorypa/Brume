@@ -1,10 +1,13 @@
+@import "../../node_modules/normalize.scss/normalize";
 @import "global/variables";
 @import "global/fonts";
 
 h1 {
 color: red;
-font-family: "Playfair Display"
+font-family: "Playfair Display, serif"
 }
+
+
 
 html, body {
   height: 100%;
