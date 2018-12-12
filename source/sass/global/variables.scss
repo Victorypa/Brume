@@ -1,5 +1,10 @@
 @import "mixins/mixins";
 
-$def-font: "roboto-example", sans-serif;
+$def-font: "Raleway Regular", serif;
+$playfair: "Playfair Display", serif;
 $def-fnz: 16px;
-$bg-overlay: #112537;
+$def-bgc: #fdfaf3;
+$bg-overlay: rgba(17, 37, 55, 0.8);
+$dark-grey: #858788;
+$white: #fff;
+$def-color: $white;
