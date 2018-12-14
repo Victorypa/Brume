@@ -1,0 +1,30 @@
+.steps {
+  color: #000;
+  &__caption {
+    position: relative;
+
+    font-family: $def-font;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 30px;
+    color: $caption-color;
+    &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 42px;
+    height: 1px;
+    background-color: #1a292f;
+    }
+  }
+  &__content {
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: $content-text;
+  }
+
+  &__desc {
+    line-height: 25px;
+  }
+}

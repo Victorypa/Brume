@@ -1,0 +1,19 @@
+.portfolio, .services {
+  &__item {
+    padding: 5px 0;
+    a {
+      font-size: 1.375rem;
+      color: $tab-grey;
+      font-weight: 300;
+      &:hover {
+        color: $hover-link;
+      }
+    }
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+}

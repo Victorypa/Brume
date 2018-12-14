@@ -13,12 +13,10 @@ body {
   line-height: 1.65;
 
   background-color: $def-bgc;
-
-  color: $def-color;
 }
 
 a {
-  color: $def-color;
+  color: $white;
   text-decoration: none;
 
   &:hover {
@@ -27,63 +25,9 @@ a {
   }
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-
-  position: relative;
-
-  @include bgimage(desktop);
-
-  min-height: 608px;
-
-  padding-top: 25px;
-
-  z-index: 997;
-
-  &__logo {
-    height: 22px;
-    z-index:999;
-  }
-  &__top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__desc {
-    font-family: $muller;
-    font-size: 1.25rem;
-    line-height: 23px;
-    letter-spacing: .05em;
-
-    padding: 5px 0;
-  }
-  &__content {
-    margin: auto 0;
-    text-align: center;
-  }
-  &__arrow {
-    margin-top: 55px;
-
-    fill: $white;
-    opacity: .6;
-
-    animation: bounce 3s infinite;
-  }
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-30px);
-    }
-    60% {
-      transform: translateY(-15px);
-    }
+.text-center {
+  text-align: center;
 }
-}
-  
-
 
 .blue-overlay {
   position: absolute;
@@ -102,6 +46,12 @@ a {
   font-size: 3rem;
 
   line-height: 44px;
+  &--section {
+    padding-bottom: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: $caption-color;
+  }
 }
 
 .primary-button {
@@ -109,6 +59,7 @@ a {
 
   width: 220px;
 
+  font-family: def-font;
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: .1em;
@@ -123,6 +74,13 @@ a {
   &:hover {
     background-color: $hover-link;
     color: $white;
+  }
+  &--color {
+    color: #000;
+    border: 1px solid #000;
+    &:hover {
+      border: 1px solid #fff;
+    }
   }
 }
 
@@ -166,7 +124,6 @@ a {
 
 			padding: 20px 0;
 		}
-
 	}
 	&.show {
 		top: -100%;
@@ -187,11 +144,7 @@ a {
   		width: 100%;
 
   		position: absolute;
-    		/* left: 50%; */
   		top: 50%;
-
-  		/* margin-left: -9px; */
-  		/* margin-top: -1px; */
 
   		background-color: $white;
   	}
@@ -235,5 +188,8 @@ a {
       margin-left: 0;
     }
   }
+}
 
+.steps, .order, .portfolio, .services {
+    padding: 55px 0;
 }
