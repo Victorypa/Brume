@@ -1,7 +1,40 @@
 .order {
-  background-color: $blue;
+  position: relative;
+
+  @include bgimage(order-mobile);
+
+  z-index: 1;
   .main-title--section {
     color: $white;
-    text-align: center;
+
+    padding-bottom: 0;
   }
-}
+  &__form {
+    input {
+      width: 100%;
+      margin-bottom: 45px;
+
+      background-color: transparent;
+      color: $white;
+      border: none;
+      border-bottom: 1px solid $tab-grey;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+  &__info {
+    font-family: $def-font;
+    color: $white;
+    text-align: center;
+
+    padding-top: 15px;
+    &--fz {
+      font-size: 1.125rem;
+
+      padding-bottom: 40px;
+    }
+
+  }
+  }
+

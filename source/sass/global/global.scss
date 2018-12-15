@@ -44,12 +44,12 @@ a {
 .main-title {
   font-family: $playfair;
   font-size: 3rem;
+  text-align: center;
 
   line-height: 44px;
   &--section {
     padding-bottom: 25px;
     font-weight: 700;
-    text-align: center;
     color: $caption-color;
   }
 }
@@ -59,7 +59,7 @@ a {
 
   width: 220px;
 
-  font-family: def-font;
+  font-family: $def-font;
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: .1em;
@@ -75,12 +75,18 @@ a {
     background-color: $hover-link;
     color: $white;
   }
-  &--color {
+  &--transparent {
     color: #000;
     border: 1px solid #000;
     &:hover {
-      border: 1px solid #fff;
+      border: 1px solid transparent;
     }
+  }
+  &--orange {
+    @include button-bg($hover-link);
+
+    border-radius: 5px;
+    border: none;
   }
 }
 
@@ -190,6 +196,6 @@ a {
   }
 }
 
-.steps, .order, .portfolio, .services {
-    padding: 55px 0;
+.steps, .order, .portfolio, .review, .footer {
+    padding: 90px 0;
 }

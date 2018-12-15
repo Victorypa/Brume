@@ -3,7 +3,6 @@
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 30px;
-    text-align: center;
     color: $content-text;
 
     margin: 40px 0;
@@ -12,6 +11,10 @@
   &__img {
     width: 100%;
     min-height: auto;
+  }
+
+  .main-title {
+    text-align: left;
   }
 
 }

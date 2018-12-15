@@ -16,12 +16,14 @@
   z-index: 997;
 
   &__logo {
-    height: 22px;
+    img {
+      width: 40px;
+    }
     z-index:999;
   }
   &__top {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
   }
   &__desc {

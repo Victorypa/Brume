@@ -1,0 +1,31 @@
+.review {
+  text-align: center;
+
+  .main-title {
+    padding-bottom: 70px;
+  }
+  &__card {
+    background-color: $white;
+
+    padding: 10px;
+  }
+  figcaption {
+    font-family: $def-font;
+    font-size: 1.2rem;
+    font-weight: 600;
+    span {
+      color: $hover-link;
+      font-size: 0.9rem;
+    }
+  }
+  &__img {
+    @include img100;
+
+    margin-top: -50px;
+  }
+  &__text {
+    color: $content-text;
+    font-weight: 300;
+    font-size: 1.25rem;
+  }
+}
