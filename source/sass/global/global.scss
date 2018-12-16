@@ -1,4 +1,3 @@
-
 html, body {
   height: 100%;
 
@@ -55,146 +54,26 @@ a {
   }
 }
 
-.primary-button {
-  display: block;
-
-  width: 220px;
-
-  font-family: $def-font;
-  font-weight: 700;
-  font-size: 0.875rem;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  margin: 0 auto;
-  background-color: transparent;
-  border: 1px solid #fff;
-  &:hover {
-    background-color: $hover-link;
-    color: $white;
-  }
-  &--transparent {
-    color: #000;
-    border: 1px solid #000;
-    &:hover {
-      border: 1px solid transparent;
-    }
-  }
-  &--orange {
-    @include button-bg($hover-link);
-
-    border-radius: 5px;
-    border: none;
-  }
-}
-
-.mobile-menu {
-  display: none;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  background-color: $blue;
-
-  z-index: 999;
-  @include transition-animation;
-  .user-nav {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding: 0;
-
-    font-family: $def-font;
-
-		list-style: none;
-		font-size: 1.25rem;
-    font-weight: 600;
-
-		&__link {
-			display: block;
-
-      line-height: 15px;
-      letter-spacing: .1em;
-
-			padding: 20px 0;
-		}
-	}
-	&.show {
-		top: -100%;
-	}
-  &__burger {
-  	width: 33px;
-  	height: 25px;
-
-  	position: relative;
-  	right: 10px;
-
-  	z-index: 999;
-  	span, span::before, span::after {
-  		content: '';
-  		display: block;
-
-  		height: 3px;
-  		width: 100%;
-
-  		position: absolute;
-  		top: 50%;
-
-  		background-color: $white;
-  	}
-  	span::before {
-  		margin-top: -13px;
-
-  		transition: all 0.2s;
-  	}
-  	span::after {
-  		margin-top: 9px;
-
-  		transition: all 0.2s;
-  	}
-  	&-active span{
-  		background-color: transparent;
-  		&::before {
-  			margin-top: 0;
-
-  			transform:rotate(135deg);
-  		}
-  		&::after {
-  			margin-top: 0;
-
-  			transform:rotate(-135deg);
-  		}
-  	}
-  }
-}
-
 .socials {
   padding-top: 30px;
 
   a {
     fill: $white;
     margin-left: 30px;
+    @include transition-animation;
     &:hover {
       fill: $hover-link;
-      @include transition-animation;
     }
     &:first-child {
       margin-left: 0;
     }
   }
+}
+
+button {
+&:focus {
+  outline: none;
+}
 }
 
 .steps, .order, .portfolio, .review {

@@ -1,0 +1,36 @@
+.primary-button {
+  display: block;
+
+  width: 220px;
+
+  font-family: $def-font;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin: 0 auto;
+  background-color: transparent;
+  border: 1px solid #fff;
+  @include transition-animation;
+  &:hover {
+    background-color: $hover-link;
+    color: $white;
+  }
+  &--transparent {
+    color: #000;
+    border: 1px solid #000;
+    &:hover {
+      border: 1px solid transparent;
+    }
+  }
+  &--orange {
+    @include button-bg($hover-link);
+
+    border-radius: 5px;
+    border: transparent;
+  }
+}

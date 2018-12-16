@@ -18,10 +18,15 @@
 
       background-color: transparent;
       color: $white;
+
+      padding: 15px 10px 15px 5px;
+
       border: none;
-      border-bottom: 1px solid $tab-grey;
+      border-bottom: 2px solid $tab-grey;
+      @include transition-animation;
       &:focus {
         outline: 0;
+        border-bottom: 2px solid $white;
       }
     }
   }

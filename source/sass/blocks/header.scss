@@ -23,7 +23,6 @@
   }
   &__top {
     display: flex;
-    // align-items: center;
     justify-content: space-between;
   }
   &__desc {
@@ -37,9 +36,12 @@
   &__content {
     margin: auto 0;
     text-align: center;
+    a {
+      padding: 30px;
+    }
   }
   &__arrow {
-    margin-top: 55px;
+    padding-top: 55px;
 
     fill: $white;
     opacity: .6;
