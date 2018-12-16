@@ -2,9 +2,10 @@
   &__item {
     padding: 5px 0;
     a {
-      font-size: 1.375rem;
-      color: $tab-grey;
-      font-weight: 300;
+      font-family: $raleway-light;
+      font-size: 1.3rem;
+      color: $gray;
+      line-height: 2.5rem;
       &:hover {
         color: $hover-link;
       }

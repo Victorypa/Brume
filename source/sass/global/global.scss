@@ -2,7 +2,9 @@
 html, body {
   height: 100%;
 
-	font-size: $def-fnz;
+  font-family: "Arial", sans-serif;
+
+  font-size: $def-fnz;
 }
 
 body {
@@ -42,14 +44,13 @@ a {
 }
 
 .main-title {
-  font-family: $playfair;
+  font-family: $playfair-bold;
   font-size: 3rem;
   text-align: center;
 
-  line-height: 44px;
+  line-height: 48px;
   &--section {
     padding-bottom: 25px;
-    font-weight: 700;
     color: $caption-color;
   }
 }
@@ -196,6 +197,6 @@ a {
   }
 }
 
-.steps, .order, .portfolio, .review, .footer {
+.steps, .order, .portfolio, .review {
     padding: 90px 0;
 }
