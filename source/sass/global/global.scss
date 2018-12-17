@@ -26,6 +26,17 @@ a {
   }
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
 .text-center {
   text-align: center;
 }
@@ -71,9 +82,9 @@ a {
 }
 
 button {
-&:focus {
-  outline: none;
-}
+  &:focus {
+    outline: none;
+  }
 }
 
 .steps, .order, .portfolio, .review {

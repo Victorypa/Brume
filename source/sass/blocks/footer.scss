@@ -3,7 +3,7 @@
   color: $hover-link;
   text-align: center;
   background-color: $blue;
-  
+
   .socials {
     a {
       &:nth-child(2) {
@@ -14,14 +14,11 @@
       }
     }
   }
-  
   &__img {
     width: 50px;
   }
   &__list {
     margin: 50px 0;
-    list-style: none;
-    padding: 0;
   }
   &__copyright {
     a {

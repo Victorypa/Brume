@@ -1,23 +1,31 @@
 .about {
   color: #000;
-  &__number {
-    font-family: $playfair;
-    font-weight: 700;
-    font-size: 5.3125rem ;
-    color: $hover-link;
-    letter-spacing: .01em;
-    opacity: .26;
+  ul {
+    counter-reset: addNumber;
   }
   &__caption {
     font-family: $def-font;
     font-size: 1.5rem;
     line-height: 30px;
     color: $caption-color;
+
   }
   &__content {
     font-size: 1.125rem;
     font-weight: 400;
     color: $content-text;
+
+    &::before {
+      counter-increment: addNumber;
+      content: "0" counter(addNumber);
+
+      font-family: $playfair;
+      font-weight: 700;
+      font-size: 5.3125rem ;
+      color: $hover-link;
+      letter-spacing: .01em;
+      opacity: .26;
+    }
   }
 
   &__desc {

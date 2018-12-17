@@ -2,14 +2,9 @@
   &__item {
 
   }
-  &__img {
-    width: 100%;
-    min-height: auto;
-  }
-
-   figcaption {
-     font-weight: 600;
-     color: $caption-color;
-     text-align: center;
-   }
+ figcaption {
+   font-weight: 600;
+   color: $caption-color;
+   text-align: center;
+ }
 }
