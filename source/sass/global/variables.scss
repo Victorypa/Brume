@@ -1,7 +1,7 @@
 @import "mixins/mixins";
 
 $def-font: "Raleway Regular", arial;
-$raleway-light: "Raleway Light"; 
+$raleway-light: "Raleway Light";
 $playfair: "Playfair Display", serif;
 $playfair-bold: "Playfair Bold", serif;
 $muller: "Muller Thin", serif;
@@ -15,3 +15,10 @@ $caption-color: #1a292f;
 $content-text: #838383;
 $tab-grey: #bababa;
 $gray: #2a2a2a;
+
+
+/* Media */
+
+/* $screen-s: ~"(min-width : 320px)"; */
+$screen-m: 'min-width : 768px';
+/* $screen-lg: ~"(min-width: 1200px)"; */

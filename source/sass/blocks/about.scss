@@ -11,6 +11,7 @@
 
   }
   &__content {
+
     font-size: 1.125rem;
     font-weight: 400;
     color: $content-text;
@@ -27,9 +28,27 @@
       letter-spacing: .01em;
       opacity: .26;
     }
-  }
 
-  &__desc {
-    line-height: 25px;
+    &__desc {
+      line-height: 25px;
+    }
+  }
+}
+
+
+ @media ($screen-m) {
+  .about {
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+    li {
+      &:nth-child(odd) {
+        margin-left: auto;
+      }
+    }
+    &__content {
+      width: 375px;
+    }
   }
 }
