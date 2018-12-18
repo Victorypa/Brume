@@ -15,9 +15,10 @@
     font-weight: 400;
     color: $content-text;
 
+    counter-increment: addNumber;
+
     &::before {
-      counter-increment: addNumber;
-      content: "0" counter(addNumber);
+      content: counter(addNumber, decimal-leading-zero );
 
       font-family: $playfair;
       font-weight: 700;
