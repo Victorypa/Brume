@@ -90,3 +90,15 @@
   	}
   }
 }
+
+
+ @media ($screen-m) {
+   .mobile-menu {
+     &__burger {
+       width: 60px;
+       	span, span::before, span::after {
+          height: 5px;
+        }
+     }
+   }
+ }

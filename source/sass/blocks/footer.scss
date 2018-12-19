@@ -29,3 +29,20 @@
     }
   }
 }
+
+ @media ($screen-m) {
+   .footer {
+     display: flex;
+     flex-direction: column;
+     &__copyright {
+       display: flex;
+       justify-content: space-around;
+       order: 2;
+
+       margin-top: 50px;
+     }
+     &__list {
+       order: 3;
+     }
+   }
+ }

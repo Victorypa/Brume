@@ -29,3 +29,42 @@
     line-height: 25px;
   }
 }
+
+
+ @media ($screen-m) {
+   .steps {
+     &__wrapper {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       counter-reset: myCounter;
+     }
+     &__content {
+       position: relative;
+
+       width: 35%;
+       padding-left: 80px;
+     }
+     &__caption {
+         &::after {
+         position: absolute;
+
+         counter-increment: myCounter;
+         content: counter(myCounter);
+
+         font-size: 0.75rem;
+         text-align: center;
+         align-items: center;
+
+         top: 0;
+         left: -45px;
+
+         width: 30px;
+         height: 30px;
+
+         border-radius: 50%;
+         background-color: #f9e7c5;
+       }
+     }
+   }
+ }

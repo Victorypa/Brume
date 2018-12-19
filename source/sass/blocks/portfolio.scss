@@ -4,7 +4,8 @@
     a {
       font-family: $raleway-light;
       font-size: 1.3rem;
-      color: $gray;
+      font-weight: 600;
+      color: $tab-grey;
       line-height: 2.5rem;
       @include transition-animation;
       &:hover {
@@ -12,4 +13,29 @@
       }
     }
   }
+}
+
+
+@media ($screen-m) {
+ .portfolio {
+   &__list {
+     display: flex;
+     justify-content: space-between;
+
+     padding: 0 30px;
+   }
+
+ }
+
+ .services {
+   &__item {
+     width: 50%;
+
+     margin-bottom: 20px;
+   }
+   &__list {
+     display: flex;
+     flex-wrap: wrap;
+   }
+ }
 }

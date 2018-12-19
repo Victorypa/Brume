@@ -9,7 +9,7 @@
 
     padding: 10px;
   }
-  figcaption {
+  &__caption {
     font-family: $def-font;
     font-size: 1.2rem;
     font-weight: 600;
@@ -29,3 +29,12 @@
     font-size: 1.25rem;
   }
 }
+
+ @media ($screen-m) {
+   .review {
+     &__card {
+       display: flex;
+       flex-direction: row-reverse;
+     }
+   }
+ }

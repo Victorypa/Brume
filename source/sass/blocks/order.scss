@@ -42,6 +42,14 @@
 
       padding-bottom: 40px;
     }
+  }
+  }
 
-  }
-  }
+   @media ($screen-m) {
+     .order {
+       &__wrapper {
+         width: 75%;
+         margin: 0 auto;
+       }
+     }
+   }
