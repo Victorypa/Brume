@@ -18,11 +18,12 @@
 
 @media ($screen-m) {
  .portfolio {
+   .main-title {
+     text-align: left;
+   }
    &__list {
      display: flex;
      justify-content: space-between;
-
-     padding: 0 30px;
    }
 
  }

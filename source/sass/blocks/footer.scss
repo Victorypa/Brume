@@ -34,14 +34,16 @@
    .footer {
      display: flex;
      flex-direction: column;
+
+     padding: 45px 0;
      &__copyright {
        display: flex;
        justify-content: space-around;
        order: 2;
-
-       margin-top: 50px;
      }
      &__list {
+      margin: 20px 0;
+
        order: 3;
      }
    }

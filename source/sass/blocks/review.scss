@@ -9,6 +9,7 @@
 
     padding: 10px;
   }
+
   &__caption {
     font-family: $def-font;
     font-size: 1.2rem;
@@ -19,8 +20,6 @@
     }
   }
   &__img {
-    @include img100;
-
     margin-top: -50px;
   }
   &__text {
@@ -35,6 +34,21 @@
      &__card {
        display: flex;
        flex-direction: row-reverse;
+       align-items: center;
+
+       padding-top: 30px;
+       padding-bottom: 30px;
+
+
+     }
+     &__content {
+       width: 75%;
+
+       text-align: left;
+    }
+     &__img {
+      margin-top: 0;
+      margin-right: -80px;
      }
    }
  }

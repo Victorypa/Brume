@@ -126,7 +126,8 @@
         <li class="about__content">
           <h2 class="about__caption">Мы&nbsp;&mdash; профессионалы своего дела</h2>
           <div class="about__desc">
-            Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и&nbsp;тренинги, а&nbsp;студия уже реализовала
+            Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и&nbsp;тренинги, а&nbsp;студия уже
+            реализовала
             свыше
             1000 дизайн-проектов.
           </div>
@@ -188,7 +189,9 @@
 
       <div class="services__content">
         <picture>
-          <img class="services__img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x" alt="Brume">
+            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
+          <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x" alt="Brume">
         </picture>
         <div class="services__desc">
           Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
@@ -215,7 +218,7 @@
 
   <section class="steps">
     <div class="container">
-      <div class="main-title main-title--section text-center">Этапы <br>работы</div>
+      <div class="main-title main-title--section">Этапы работы</div>
       <ul class="steps__wrapper">
         <li class="steps__content">
           <h2 class="steps__caption">Консультация</h2>
@@ -281,20 +284,20 @@
     <div class="container">
       <div class="main-title main-title--section">Отзывы наших клиентов</div>
       <div class="review__card">
-          <picture>
-            <img class="review__img" src="img/review-mobile.jpg" srcset="img/review-mobile@2x.jpg 2x" alt="Александра Холодная">
-          </picture>
+        <picture>
+          <img class="review__img img" src="img/review-mobile.jpg" srcset="img/review-mobile@2x.jpg 2x" alt="Александра Холодная">
+        </picture>
 
-    <div>
-      <div class="review__caption">Александра Холодная<br>
-        <span>Услуга: "Интерьер детской"</span></div>
-      <div class="review__text">
-        Спасибо студии за&nbsp;замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и&nbsp;легко,
-        команда
-        выполнила все точно в&nbsp;срок, сделали все как мы&nbsp;и&nbsp;хотели.
-        В&nbsp;следующий раз обратимся к&nbsp;BRUME!
-      </div>
-    </div>
+        <div class="review__content">
+          <div class="review__caption">Александра Холодная<br>
+            <span>Услуга: "Интерьер детской"</span></div>
+          <div class="review__text">
+            Спасибо студии за&nbsp;замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и&nbsp;легко,
+            команда
+            выполнила все точно в&nbsp;срок, сделали все как мы&nbsp;и&nbsp;хотели.
+            В&nbsp;следующий раз обратимся к&nbsp;BRUME!
+          </div>
+        </div>
 
       </div>
     </div>

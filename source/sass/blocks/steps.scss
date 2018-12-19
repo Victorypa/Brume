@@ -1,5 +1,8 @@
 .steps {
   color: #000;
+  .main-title {
+    text-align: center;
+  }
   &__caption {
     position: relative;
 
@@ -33,6 +36,9 @@
 
  @media ($screen-m) {
    .steps {
+    .main-title {
+      text-align: left;
+    }
      &__wrapper {
        display: flex;
        flex-wrap: wrap;
