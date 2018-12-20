@@ -5,7 +5,7 @@
 
   position: relative;
 
-  @include bgimage(desktop);
+  @include bgimage(header-slide-mobile);
 
   min-height: 608px;
 
@@ -16,9 +16,9 @@
   z-index: 997;
 
   &__logo {
-    img {
+    /* img {
       width: 40px;
-    }
+    } */
     z-index:999;
   }
   &__top {
@@ -68,6 +68,7 @@
  @media ($screen-m) {
    .header {
       min-height: 100%;
+      background-image: url("../img/header-slide-tablet.jpg");
       .main-title {
         font-size: 6.25rem;
         line-height: 100px;

@@ -97,8 +97,15 @@
      &__burger {
        width: 60px;
        	span, span::before, span::after {
-          height: 5px;
+          height: 6px;
         }
+        span::before {
+          margin-top: -20px;
+        }
+        span::after {
+          margin-top: 16px;
+        }
+
      }
    }
  }
