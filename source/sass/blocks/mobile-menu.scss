@@ -66,7 +66,7 @@
   		background-color: $white;
   	}
   	span::before {
-  		margin-top: -13px;
+  		margin-top: -11px;
 
   		transition: all 0.2s;
   	}
@@ -105,7 +105,10 @@
         span::after {
           margin-top: 16px;
         }
-
      }
    }
+ }
+
+ @media ($screen-lg) {
+
  }

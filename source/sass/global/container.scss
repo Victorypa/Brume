@@ -10,3 +10,9 @@
 		padding-right: 30px;
   }
 }
+
+@media ($screen-lg) {
+	.container {
+		margin: 60px;
+	}
+}

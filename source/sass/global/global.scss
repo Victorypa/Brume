@@ -53,6 +53,15 @@ ul {
   z-index: -1;
 }
 
+@media ($screen-lg) {
+  .blue-overlay {
+    right: 50%;
+    top: -20%;
+    left: -10%;
+    bottom: -10%;
+  }
+}
+
 .main-title {
   font-family: $playfair-bold;
   font-size: 3rem;

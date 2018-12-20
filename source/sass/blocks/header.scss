@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
   }
-  &__desc {
+  &__text {
     font-family: $muller;
     font-size: 1.25rem;
     line-height: 23px;
@@ -36,9 +36,9 @@
   &__content {
     margin: auto 0;
     text-align: center;
-    a {
-      padding: 30px;
-    }
+    // a {
+    //   padding: 30px;
+    // }
   }
   &__arrow {
     padding-top: 55px;
@@ -73,19 +73,37 @@
         font-size: 6.25rem;
         line-height: 100px;
       }
-
       &__top {
         padding-top: 30px;
       }
-      &__desc {
+      &__text {
         font-size: 1.625rem;
       }
-
-      .primary-button {
-        width: 400px;
-        font-size: 1.875rem;
-        padding: 30px 0;
-      }
    }
+ }
 
+ @media ($screen-lg) {
+   .header {
+    min-height: 608px;
+    background-image: url("../img/header-slide-desktop.jpg");
+    background-position: center;
+     .main-title {
+       font-size: 3.75rem;
+       line-height: 60px;
+       text-align: left;
+     }
+     &__desc {
+       width: 50%;
+     }
+     &__text {
+      max-width: 390px;
+      font-size: 0.875rem;
+      line-height: 26px;
+      text-align: left;
+      margin-bottom: 26px;
+     }
+     &__arrow {
+       display: none;
+     }
+   }
  }
