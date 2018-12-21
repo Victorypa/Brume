@@ -16,9 +16,6 @@
   z-index: 997;
 
   &__logo {
-    /* img {
-      width: 40px;
-    } */
     z-index:999;
   }
   &__top {
@@ -84,6 +81,8 @@
 
  @media ($screen-lg) {
    .header {
+    margin: 100px auto 0;
+    width: 60%;
     min-height: 608px;
     background-image: url("../img/header-slide-desktop.jpg");
     background-position: center;
@@ -92,8 +91,20 @@
        line-height: 60px;
        text-align: left;
      }
-     &__desc {
+     &__top {
        width: 50%;
+       position: absolute;
+       top: -15%;
+     }
+     &__content {
+        width: 50%;
+     }
+     &__logo {
+       order: 2;
+     }
+     &__desc {
+       width: 55%;
+       text-align: left;
      }
      &__text {
       max-width: 390px;

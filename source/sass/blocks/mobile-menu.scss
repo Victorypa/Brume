@@ -92,7 +92,7 @@
 }
 
 
- @media ($screen-m) {
+ @media ($screen-m) and (max-width: 1200px) {
    .mobile-menu {
      &__burger {
        width: 60px;
@@ -107,8 +107,4 @@
         }
      }
    }
- }
-
- @media ($screen-lg) {
-
  }

@@ -11,7 +11,6 @@
 
   }
   &__content {
-
     font-size: 1.125rem;
     font-weight: 400;
     color: $content-text;
@@ -36,7 +35,7 @@
 }
 
 
- @media ($screen-m) {
+ @media ($screen-m) and (max-width: 1200px)  {
   .about {
     ul {
       display: flex;
@@ -52,3 +51,33 @@
     }
   }
 }
+
+ @media ($screen-lg) {
+  .about {
+    padding-top: 120px;
+    &__caption {
+    font-size: 1.25rem;
+    }
+    &__content {
+      font-size: 1rem;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 68%;
+      min-height: 485px;
+      margin: 0 auto;
+    }
+    li {
+      width: 25%;
+
+      line-height: 25px;
+      padding-left: 30px;
+      text-align: justify;
+      &:nth-child(even) {
+        align-self: flex-end;
+      }
+    }
+  }
+
+ }
