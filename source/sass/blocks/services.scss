@@ -15,4 +15,33 @@
     text-align: left;
   }
 
+  &__item {
+    padding: 5px 0;
+    a {
+      font-family: $raleway-light;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: $tab-grey;
+      line-height: 2.5rem;
+      @include transition-animation;
+      &:hover {
+        color: $hover-link;
+      }
+    }
+  }
+}
+
+
+@media ($screen-m) {
+  .services {
+    &__item {
+      width: 50%;
+
+      margin-bottom: 20px;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

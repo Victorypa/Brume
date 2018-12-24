@@ -1,5 +1,5 @@
-.portfolio, .services {
-  &__item {
+.portfolio {
+  &__tab {
     padding: 5px 0;
     a {
       font-family: $raleway-light;
@@ -21,22 +21,19 @@
    .main-title {
      text-align: left;
    }
-   &__list {
+   &__tabs {
      display: flex;
      justify-content: space-between;
    }
-
- }
-
- .services {
-   &__item {
-     width: 50%;
-
-     margin-bottom: 20px;
-   }
-   &__list {
-     display: flex;
-     flex-wrap: wrap;
-   }
  }
 }
+
+
+@media ($screen-lg) {
+  .portfolio {
+    &__list {
+      display: flex;
+
+    }
+  }
+ }

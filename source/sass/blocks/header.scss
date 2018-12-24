@@ -10,6 +10,8 @@
   min-height: 608px;
 
   padding-top: 25px;
+  padding-left: 15px;
+	padding-right: 15px;
 
   color: $white;
 
@@ -62,10 +64,12 @@
   }
 }
 
- @media ($screen-m) {
+ @media ($screen-m) and (max-width: 1200px) {
    .header {
       min-height: 100%;
       background-image: url("../img/header-slide-tablet.jpg");
+      padding-left: 30px;
+      padding-right: 30px;
       .main-title {
         font-size: 6.25rem;
         line-height: 100px;
@@ -81,11 +85,13 @@
 
  @media ($screen-lg) {
    .header {
-    margin: 100px auto 0;
-    width: 60%;
-    min-height: 608px;
+
+    max-width: 1170px;
+    min-height: 600px;
     background-image: url("../img/header-slide-desktop.jpg");
     background-position: center;
+    margin: 90px auto 0;
+    padding: 0;
      .main-title {
        font-size: 3.75rem;
        line-height: 60px;
@@ -93,17 +99,20 @@
      }
      &__top {
        width: 50%;
-       position: absolute;
-       top: -15%;
+       margin-top: -55px;
      }
      &__content {
         width: 50%;
      }
      &__logo {
+       margin-right: -30px;
        order: 2;
      }
+     &__info {
+      width: 60%;
+      margin: 0 auto;
+     }
      &__desc {
-       width: 55%;
        text-align: left;
      }
      &__text {
