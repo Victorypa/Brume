@@ -14,12 +14,9 @@
       }
     }
   }
-  /* &__img {
-    width: 50px;
-  } */
-  &__list {
-    margin: 50px 0;
-  }
+   &__img {
+    padding-bottom: 10px;
+  } 
   &__copyright {
     a {
       color: $hover-link;
@@ -42,7 +39,7 @@
        order: 2;
      }
      &__list {
-      margin: 20px 0;
+      // margin: 20px 0;
 
        order: 3;
      }

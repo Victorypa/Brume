@@ -38,8 +38,6 @@
 
        padding-top: 30px;
        padding-bottom: 30px;
-
-
      }
      &__content {
        width: 75%;
@@ -52,3 +50,19 @@
      }
    }
  }
+
+ @media ($screen-lg) {
+   .review {
+    .main-title {
+      text-align: left;
+   }
+   &__content {
+    width: 90%;
+    padding-left: 15px;
+  }
+  &__img {
+    margin-right: -60px;
+  }
+ }
+ 
+}
