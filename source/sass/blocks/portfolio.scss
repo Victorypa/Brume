@@ -1,20 +1,19 @@
 .portfolio {
   &__tab {
     padding: 5px 0;
-    a {
-      font-family: $raleway-light;
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: $tab-grey;
-      line-height: 2.5rem;
-      @include transition-animation;
-      &:hover {
-        color: $hover-link;
-      }
+  }
+  &__link {
+    font-family: $raleway-light;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $tab-grey;
+    line-height: 2.5rem;
+    @include transition-animation;
+    &:hover {
+      color: $hover-link;
     }
   }
 }
-
 
 @media ($screen-m) {
  .portfolio {
@@ -28,12 +27,72 @@
  }
 }
 
-
 @media ($screen-lg) {
   .portfolio {
     &__list {
       display: flex;
+    }
+    &__tabs {
+      justify-content: flex-start;
+    }
+    &__tab {
+      margin-right: 50px;
+      margin-bottom: 30px;
+      a {
+        &.active {
+          color: #000;
+        }
+      }
+    }
+    &__item {
+      position: relative;
+    }
 
+    &__button {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        margin-top: -42px;
+        margin-left: -42px;
+        
+    //     width: 84px;
+    //     height: 84px;
+
+    //     border-radius: 50%;
+    //     background-color: #f2b47c;
+
+    //     transition: all .2s ease-in-out;
+    //     opacity: 1;
+    //     cursor: pointer;
+
+    //       &:hover {
+    //       opacity: 1;
+    //   }
+    }
+
+    figure {
+      margin: 0;
+    }
+    &__caption {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      font-family: $def-font;
+      font-size: 1.25rem;
+      color: #fff;
+      z-index: 2;
+    }
+    .blue-overlay {
+      z-index: 1;
+
+      &:hover {
+        opacity: 0;
+        .portfolio__caption {
+          opacity: 0;
+        }
+      }
     }
   }
  }

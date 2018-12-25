@@ -74,3 +74,12 @@
      }
    }
  }
+
+
+ @media ($screen-lg) {
+   .steps {
+     &__content {
+       width: 25%;
+     }
+   }
+ }

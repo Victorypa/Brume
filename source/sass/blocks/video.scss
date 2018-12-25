@@ -70,3 +70,10 @@
   }
 
 }
+
+@media ($screen-lg) {
+  .video {
+    background-image: url("../../img/video-desktop.jpg");
+    background-position: center;
+  }
+}

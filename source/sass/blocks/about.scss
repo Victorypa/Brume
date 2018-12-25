@@ -8,7 +8,6 @@
     font-size: 1.5rem;
     line-height: 30px;
     color: $caption-color;
-
   }
   &__content {
     font-size: 1.125rem;
@@ -16,7 +15,6 @@
     color: $content-text;
 
     counter-increment: addNumber;
-
     &::before {
       content: counter(addNumber, decimal-leading-zero );
 
@@ -27,7 +25,6 @@
       letter-spacing: .01em;
       opacity: .26;
     }
-
     &__desc {
       line-height: 25px;
     }
@@ -64,18 +61,17 @@
     ul {
       display: flex;
       flex-direction: row;
-      // width: 68%;
+
       min-height: 485px;
-      // margin: 0 auto;
     }
     li {
       width: 25%;
 
       line-height: 25px;
-      padding-left: 30px;
       text-align: justify;
       &:nth-child(even) {
         align-self: flex-end;
+        padding-left: 30px;
       }
     }
   }
