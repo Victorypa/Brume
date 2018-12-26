@@ -17,6 +17,12 @@
 
   z-index: 997;
 
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    @include bgimage(header-slide-mobile@2x);
+  }
+
   &__logo {
     z-index:999;
   }
@@ -67,6 +73,11 @@
       background-image: url("../img/header-slide-tablet.jpg");
       padding-left: 30px;
       padding-right: 30px;
+      @media
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        @include bgimage(header-slide-tablet@2x);
+      }
       .main-title {
         font-size: 6.25rem;
         line-height: 100px;
@@ -89,6 +100,11 @@
     background-position: center;
     margin: 90px auto 0;
     padding: 0;
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      @include bgimage(header-slide-desktop@2x);
+    }
      .main-title {
        font-size: 3.75rem;
        line-height: 60px;

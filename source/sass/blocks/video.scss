@@ -12,6 +12,12 @@
 
   text-align: center;
 
+  @media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  @include bgimage(video-mobile@2x);
+}
+
   .blue-overlay {
     background-color: rgba(0,32,58,.5);
     z-index: 0;
@@ -67,6 +73,11 @@
     min-height: 810px;
     background-image: url("../../img/video-tablet.jpg");
     background-position: center;
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url("../../img/video-tablet@2x.jpg");
+    }
   }
 
 }
@@ -74,5 +85,10 @@
 @media ($screen-lg) {
   .video {
     background-image: url("../../img/video-desktop.jpg");
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url("../../img/video-desktop@2x.jpg");
+    }
   }
 }
