@@ -36,6 +36,26 @@
         color: $white;
       }
     }
+
+    .form-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      fill: $tab-grey;
+    }
+
+    .order__icon {
+      &:hover {
+        .form-icon {
+          fill: $white;
+        }
+      }
+
+    }
+  }
+  &__icon {
+      position: relative;
+
   }
   &__info {
     font-family: $raleway-light;
