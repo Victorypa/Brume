@@ -13,10 +13,10 @@
   text-align: center;
 
   @media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-  /* @include bgimage(video-mobile@2x); */
-}
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+      background-image: url("../../img/video-mobile@2x.jpg");
+  }
 
   .blue-overlay {
     background-color: rgba(0,32,58,.5);
