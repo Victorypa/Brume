@@ -15,7 +15,7 @@
   @media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-  @include bgimage(video-mobile@2x);
+  /* @include bgimage(video-mobile@2x); */
 }
 
   .blue-overlay {

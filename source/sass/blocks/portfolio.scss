@@ -13,6 +13,21 @@
       color: $hover-link;
     }
   }
+  &__img {
+    width: 100%;
+
+    figcaption {
+      font-weight: 600;
+      color: $caption-color;
+      text-align: center;
+    }
+  }
+  &__button {
+    display: none;
+  }
+  &__rotate-text {
+    display: none;
+  }
 }
 
 @media ($screen-m) {
@@ -44,23 +59,49 @@
         }
       }
     }
+    &__img {
+          height: 100%;
+    }
     &__item {
       position: relative;
+
+      &:hover {
+        .blue-overlay {
+          display: none;
+        }
+        .portfolio__caption {
+          display: none;
+        }
+        .portfolio__button {
+          display: block;
+        }
+        .portfolio__rotate-text {
+          display: none;
+        }
+      }
     }
 
     &__button {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
 
-        margin-top: -42px;
-        margin-left: -42px;
-        
+      margin-top: -42px;
+      margin-left: -42px;
+      display: none;
+    }
+    &__icon {
+      fill: #fcbd84;
+      &:hover {
+      transform: scale(1.1);
+      @include transition-animation;
+      }
     }
 
     figure {
       margin: 0;
+      height: 100%;
     }
     &__caption {
       position: absolute;
@@ -69,17 +110,20 @@
       font-family: $def-font;
       font-size: 1.25rem;
       color: #fff;
-      z-index: 2;
+      z-index: 1  ;
     }
     .blue-overlay {
       z-index: 1;
-
-      &:hover {
-        opacity: 0;
-        .portfolio__caption {
-          opacity: 0;
-        }
-      }
+    }
+    &__rotate-text {
+      display: block;
+      position: absolute;
+      font-family: $muller;
+      transform: rotate(90deg);
+      color: $white;
+      z-index: 1  ;
+      bottom: 15%;
+      left: -15%;
     }
   }
  }

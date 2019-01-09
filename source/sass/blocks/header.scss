@@ -7,7 +7,7 @@
 
   @include bgimage(header-slide-mobile);
 
-  min-height: 608px;
+  min-height: 100%;
 
   padding-top: 25px;
   padding-left: 15px;
@@ -20,7 +20,7 @@
   @media
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
-    @include bgimage(header-slide-mobile@2x);
+    /* @include bgimage(header-slide-mobile@2x); */
   }
 
   &__logo {
@@ -69,14 +69,13 @@
 
  @media ($screen-m) and (max-width: 1200px) {
    .header {
-      min-height: 100%;
       background-image: url("../img/header-slide-tablet.jpg");
       padding-left: 30px;
       padding-right: 30px;
       @media
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi) {
-        @include bgimage(header-slide-tablet@2x);
+        /* @include bgimage(header-slide-tablet@2x); */
       }
       .main-title {
         font-size: 6.25rem;
@@ -95,15 +94,14 @@
 
    .header {
     max-width: 1170px;
-    min-height: 600px;
+    min-height: 608px;
     background-image: url("../img/header-slide-desktop.jpg");
-    background-position: center;
     margin: 90px auto 0;
     padding: 0;
     @media
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
-      @include bgimage(header-slide-desktop@2x);
+      /* @include bgimage(header-slide-desktop@2x); */
     }
      .main-title {
        font-size: 3.75rem;

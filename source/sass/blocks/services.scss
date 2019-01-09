@@ -29,8 +29,10 @@
       }
     }
   }
+  &__quantity {
+    display: none;
+  }
 }
-
 
 @media ($screen-m) {
   .services {
@@ -43,5 +45,45 @@
       display: flex;
       flex-wrap: wrap;
     }
+
   }
+}
+
+@media ($screen-lg) {
+  .services {
+    &__wrapper {
+      display: flex;
+    }
+    &__list {
+      width: 60%;
+      display: block;
+    }
+    &__item {
+      width: auto;
+      margin-right: 30px;
+    }
+    &__info {
+      display: flex;
+      align-items:center;
+    }
+    .primary-button {
+      padding: 19px 30px;
+      margin-left: 30px;
+    }
+    &__quantity {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+    }
+    &__caption {
+      font-family: $playfair-bold;
+      font-size: 1.875rem;
+    }
+    &__number {
+      font-family: $def-font;
+      font-size: 1.125rem;
+    }
+  }
+
 }
