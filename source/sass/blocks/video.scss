@@ -70,7 +70,8 @@
 @media ($screen-m) {
 
   .video {
-    min-height: 810px;
+    height: calc(100vh + 55px);
+    
     background-image: url("../../img/video-tablet.jpg");
     background-position: center;
     @media

@@ -35,6 +35,16 @@
   }
 }
 
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-no-bgc {
+  background-color: transparent;
+  border: none;
+}
 
 @media ($screen-m) {
   .primary-button {

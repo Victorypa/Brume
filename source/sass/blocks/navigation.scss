@@ -1,4 +1,4 @@
-.mobile-menu {
+.navigation {
   display: none;
 
   display: flex;
@@ -91,7 +91,7 @@
   }
 }
  @media ($screen-m) and (max-width: 1200px) {
-   .mobile-menu {
+   .navigation {
      &__burger {
        width: 60px;
        	span, span::before, span::after {

@@ -52,10 +52,13 @@
   .services {
     &__wrapper {
       display: flex;
+
+      padding-top: 20px;
     }
     &__list {
-      width: 60%;
       display: block;
+
+      padding-right: 30px;
     }
     &__item {
       width: auto;
@@ -64,6 +67,9 @@
     &__info {
       display: flex;
       align-items:center;
+    }
+    &__content {
+      width: 95%;
     }
     .primary-button {
       padding: 19px 30px;

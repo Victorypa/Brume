@@ -66,6 +66,7 @@
       position: relative;
 
       &:hover {
+        width: 30%;
         .blue-overlay {
           display: none;
         }
@@ -90,6 +91,7 @@
       margin-top: -42px;
       margin-left: -42px;
       display: none;
+      
     }
     &__icon {
       fill: #fcbd84;
