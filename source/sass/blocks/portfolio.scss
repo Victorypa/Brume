@@ -64,10 +64,14 @@
     }
     &__item {
       position: relative;
+      width: 20%;
       height: 600px;
+      flex-grow: 1;
+      @include transition-animation;
 
       &:hover {
-        width: 30%;
+        flex-grow: 2;
+
         .blue-overlay {
           display: none;
         }
@@ -92,7 +96,7 @@
       margin-top: -42px;
       margin-left: -42px;
       display: none;
-      
+
     }
     &__icon {
       fill: #fcbd84;
