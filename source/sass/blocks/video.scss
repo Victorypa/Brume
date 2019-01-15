@@ -18,9 +18,9 @@
       background-image: url("../../img/video-mobile@2x.jpg");
   }
 
-  .blue-overlay {
+  @include blue-overlay(0);
+  &::before {
     background-color: rgba(0,32,58,.5);
-    z-index: 0;
   }
 
   &__content {

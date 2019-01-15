@@ -68,12 +68,17 @@
       height: 600px;
       flex-grow: 1;
       @include transition-animation;
+      @include blue-overlay(1);
 
       &:hover {
         flex-grow: 2;
-
-        .blue-overlay {
+        &::before {
           display: none;
+        }
+        .portfolio__item {
+          &::before {
+            display: none;
+          }
         }
         .portfolio__caption {
           display: none;
@@ -119,9 +124,9 @@
       color: #fff;
       z-index: 1  ;
     }
-    .blue-overlay {
-      z-index: 1;
-    }
+    // .blue-overlay {
+    //   z-index: 1;
+    // }
     &__rotate-text {
       display: block;
       position: absolute;

@@ -22,3 +22,19 @@ background-color: $bg;
   @include transition-animation;
 }
 }
+
+
+@mixin blue-overlay($z) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+    background-color: $bg-overlay;
+  
+    z-index: $z;
+  }
+}
