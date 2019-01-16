@@ -86,7 +86,11 @@
    @media ($screen-lg) {
      .order {
        background-image:none;
+       @include blue-overlay(-1);
        &::before {
+        right: 50%;
+       }
+       &::after {
          content: '';
          background: url('../img/order-desktop@2x.jpg');
          background-size: cover;
