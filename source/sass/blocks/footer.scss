@@ -18,12 +18,18 @@
     padding-bottom: 10px;
   }
   &__copyright {
+    span {
+      display: block;
+    }
     a {
       color: $hover-link;
       &:hover {
         text-decoration: underline;
       }
     }
+  }
+  &__list {
+    padding: 15px 0;
   }
 }
 

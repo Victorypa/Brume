@@ -2,6 +2,7 @@
   position: relative;
 
   @include bgimage(order-mobile);
+  @include blue-overlay(-1);
 
   z-index: 1;
   .main-title--section {
@@ -86,7 +87,7 @@
    @media ($screen-lg) {
      .order {
        background-image:none;
-       @include blue-overlay(-1);
+       
        &::before {
         right: 50%;
        }
@@ -102,9 +103,6 @@
          right: 0;
          bottom: 0;
          z-index: -1;
-       }
-       .blue-overlay {
-         right: 50%;
        }
 
        .primary-button--orange {
