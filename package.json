@@ -4,8 +4,13 @@
   "private": true,
   "description": "example",
   "scripts": {
-      "start": "gulp start"
+    "start": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
 }
