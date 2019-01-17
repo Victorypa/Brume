@@ -1,9 +1,0 @@
-@import "mixins/font-face";
-
-// @include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-// @include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
-@include font-face("Playfair Display", "fonts/PlayfairDisplay/PlayfairDisplay-Regular");
-@include font-face("Playfair Bold", "fonts/PlayfairDisplay/PlayfairDisplay-Bold");
-@include font-face("Raleway Regular", "fonts/Raleway/Raleway-Regular");
-@include font-face("Raleway Light", "fonts/Raleway/Raleway-Light");
-@include font-face("Muller Thin", "fonts/Muller/MullerThin");
