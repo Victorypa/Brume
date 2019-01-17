@@ -15,7 +15,7 @@
   @media
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
-    background-image: url("../../img/video-mobile@2x.jpg");
+    background-image: url("~@/assets/img/video-mobile@2x.jpg");
   }
 
   @include blue-overlay(0);
@@ -70,13 +70,13 @@
 
   .video {
     height: calc(100vh + 55px);
-    
-    background-image: url("../../img/video-tablet.jpg");
+
+    background-image: url("~@/assets/img/video-tablet.jpg");
     background-position: center;
     @media
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
-      background-image: url("../../img/video-tablet@2x.jpg");
+      background-image: url("~@/assets/img/video-tablet@2x.jpg");
     }
   }
 
@@ -84,11 +84,11 @@
 
 @media ($screen-lg) {
   .video {
-    background-image: url("../../img/video-desktop.jpg");
+    background-image: url("~@/assets/img/video-desktop.jpg");
     @media
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
-      background-image: url("../../img/video-desktop@2x.jpg");
+      background-image: url("~@/assets/img/video-desktop@2x.jpg");
     }
   }
 }

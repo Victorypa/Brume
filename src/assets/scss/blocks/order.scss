@@ -1,7 +1,7 @@
 .order {
   position: relative;
 
-  // @include bgimage(order-mobile);
+  @include bgimage(order-mobile);
   @include blue-overlay(-1);
 
   z-index: 1;
@@ -93,7 +93,7 @@
        }
        &::after {
          content: '';
-         background: url('./img/order-desktop@2x.jpg');
+         background: url('~@/assets/img/order-desktop@2x.jpg');
          background-size: cover;
          background-repeat: no-repeat;
          position: absolute;

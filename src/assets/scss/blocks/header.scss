@@ -19,7 +19,7 @@
   @media
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
-    background-image: url('./../img/header-slide-mobile@2x.jpg');
+    background-image: url('~@/assets/img/header-slide-mobile@2x.jpg');
   }
 
   &__logo {
@@ -88,13 +88,13 @@
 
  @media ($screen-m) and (max-width: 1200px) {
    .header {
-      background-image: url("./../img/header-slide-tablet.jpg");
+      background-image: url("~@/assets/img/header-slide-tablet.jpg");
       padding-left: 30px;
       padding-right: 30px;
       @media
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi) {
-        background-image: url('./../img/header-slide-tablet@2x.jpg');
+        background-image: url('~@/assets/img/header-slide-tablet@2x.jpg');
       }
       .main-title {
         font-size: 6.25rem;
@@ -123,13 +123,13 @@
     }
     max-width: 1170px;
     min-height: 608px;
-    background-image: url("./../img/header-slide-desktop.jpg");
+    background-image: url("~@/assets/img/header-slide-desktop.jpg");
     margin: 90px auto 0;
     padding: 0;
     @media
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
-      background-image: url('./../img/header-slide-desktop@2x.jpg');
+      background-image: url('~@/assets/img/header-slide-desktop@2x.jpg');
     }
      .main-title {
        font-size: 3.75rem;
