@@ -1,0 +1,40 @@
+@mixin transition-animation {
+  transition: 0.2s ease-in;
+}
+
+@mixin bgimage($name) {
+$url:"../img/#{$name}.jpg";
+background-image: url($url);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top;
+}
+
+@mixin img100 {
+width: 100%;
+height: 100%;
+}
+
+@mixin button-bg($bg) {
+background-color: $bg;
+&:hover {
+  background:darken($bg,8%);
+  @include transition-animation;
+}
+}
+
+
+@mixin blue-overlay($z) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+    background-color: $bg-overlay;
+  
+    z-index: $z;
+  }
+}

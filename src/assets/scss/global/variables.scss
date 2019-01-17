@@ -1,0 +1,24 @@
+@import "mixins/mixins";
+
+$def-font: "Raleway Regular";
+$raleway-light: "Raleway Light";
+$playfair: "Playfair Display", serif;
+$playfair-bold: "Playfair Bold", serif;
+$muller: "Muller Thin", serif;
+$def-fnz: 16px;
+$def-bgc: #fdfaf3;
+$blue: #00203a;
+$bg-overlay: rgba(0, 32, 58, 0.9);
+$white: #fff;
+$hover-link: #fea052;
+$caption-color: #1a292f;
+$content-text: #838383;
+$tab-grey: #bababa;
+$gray: #2a2a2a;
+
+
+/* Media */
+
+/* $screen-s: ~"(min-width : 320px)"; */
+$screen-m: 'min-width : 768px';
+$screen-lg: 'min-width : 1200px';

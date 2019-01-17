@@ -1,0 +1,93 @@
+.services {
+  &__list {
+    padding-bottom: 30px;
+  }
+  &__desc {
+    font-family: $raleway-light;
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: $content-text;
+
+    margin: 40px 0;
+  }
+
+  .main-title {
+    text-align: left;
+  }
+
+  &__item {
+    padding: 5px 0;
+    a {
+      font-family: $raleway-light;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: $tab-grey;
+      line-height: 2.5rem;
+      @include transition-animation;
+      &:hover {
+        color: $hover-link;
+      }
+    }
+  }
+  &__quantity {
+    display: none;
+  }
+}
+
+@media ($screen-m) {
+  .services {
+    &__item {
+      width: 50%;
+
+      margin-bottom: 20px;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media ($screen-lg) {
+  .services {
+    &__wrapper {
+      display: flex;
+
+      padding-top: 20px;
+    }
+    &__list {
+      display: block;
+
+      padding-right: 30px;
+    }
+    &__item {
+      width: auto;
+      margin-right: 30px;
+    }
+    &__info {
+      display: flex;
+      align-items:center;
+    }
+    &__content {
+      width: 95%;
+    }
+    .primary-button {
+      padding: 19px 30px;
+      margin-left: 30px;
+    }
+    &__quantity {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+    }
+    &__caption {
+      font-family: $playfair-bold;
+      font-size: 1.875rem;
+    }
+    &__number {
+      font-family: $def-font;
+      font-size: 1.125rem;
+    }
+  }
+}

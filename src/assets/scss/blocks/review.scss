@@ -1,0 +1,68 @@
+.review {
+  text-align: center;
+
+  .main-title {
+    padding-bottom: 70px;
+  }
+  &__card {
+    background-color: $white;
+
+    padding: 10px;
+  }
+
+  &__caption {
+    font-family: $def-font;
+    font-size: 1.2rem;
+    font-weight: 600;
+    span {
+      color: $hover-link;
+      font-size: 0.9rem;
+    }
+  }
+  &__img {
+    margin-top: -50px;
+  }
+  &__text {
+    font-family: $raleway-light;
+    color: $content-text;
+    font-size: 1.25rem;
+  }
+}
+
+ @media ($screen-m) {
+   .review {
+     &__card {
+       display: flex;
+       flex-direction: row-reverse;
+       align-items: center;
+
+       padding-top: 30px;
+       padding-bottom: 30px;
+     }
+     &__content {
+       width: 75%;
+
+       text-align: left;
+    }
+     &__img {
+      margin-top: 0;
+      margin-right: -40px;
+     }
+   }
+ }
+
+ @media ($screen-lg) {
+   .review {
+    .main-title {
+      text-align: left;
+   }
+   &__content {
+    width: 90%;
+    padding-left: 15px;
+  }
+  &__img {
+    margin-right: -60px;
+  }
+ }
+
+}

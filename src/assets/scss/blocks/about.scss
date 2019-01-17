@@ -1,0 +1,78 @@
+.about {
+  color: #000;
+  ul {
+    counter-reset: addNumber;
+  }
+  &__caption {
+    font-family: $def-font;
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: $caption-color;
+  }
+  &__content {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: $content-text;
+
+    counter-increment: addNumber;
+    &::before {
+      content: counter(addNumber, decimal-leading-zero );
+
+      font-family: $playfair;
+      font-weight: 700;
+      font-size: 5.3125rem ;
+      color: $hover-link;
+      letter-spacing: .01em;
+      opacity: .26;
+    }
+    &__desc {
+      line-height: 25px;
+    }
+  }
+}
+
+ @media ($screen-m) and (max-width: 1200px)  {
+  .about {
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+    li {
+      &:nth-child(odd) {
+        margin-left: auto;
+      }
+    }
+    &__content {
+      width: 375px;
+    }
+  }
+}
+
+ @media ($screen-lg) {
+  .about {
+    padding-top: 180px;
+    &__caption {
+    font-size: 1.25rem;
+    }
+    &__content {
+      font-size: 1rem;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      min-height: 485px;
+    }
+    li {
+      width: 25%;
+
+      line-height: 25px;
+      text-align: justify;
+      &:nth-child(even) {
+        align-self: flex-end;
+        padding-left: 30px;
+      }
+    }
+  }
+
+ }
