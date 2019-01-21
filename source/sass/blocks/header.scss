@@ -42,7 +42,7 @@
   &__wrapper {
     @include bgimage(header-slide-mobile);
     height: 100vh;
-    
+
     @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
       background-image: url('../img/header-slide-mobile@2x.jpg');
@@ -71,10 +71,10 @@
     padding: 15px;
     .bounce {
       padding-top: 55px;
-  
+
       fill: $white;
       opacity: .6;
-  
+
       animation: bounce 3s infinite;
       @include transition-animation;
       &:hover {
@@ -131,25 +131,25 @@
   .header {
     &::before {
       right: 50%;
-      top: -7%;
-      bottom: -7%;
+      top: -15%;
+      bottom: 11%;
     }
     &__container {
       width: 80%;
       margin: 0 auto;
     }
     &__wrapper  {
+      height: 700px;
       background-image: url("../img/header-slide-desktop.jpg");
+
       @media
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi) {
         background-image: url('../img/header-slide-desktop@2x.jpg');
       }
     }
-    min-height: 608px;
-    
-    // background-size: 1200px;
-    margin: 90px auto 0;
+
+    margin: 90px 0;
     padding: 0;
 
      .main-title {
@@ -158,12 +158,13 @@
        text-align: left;
      }
      &__top {
-      //  width: 50%;
-      //  margin-top: -55px;
+       position: relative;
+       top: -78px;
+       right: 0;
+       left: 0;
+       padding-left: 0;
+       padding-right: 0;
      }
-    //  &__content {
-    //     width: 50%;
-    //  }
      &__logo {
        margin-right: -30px;
        order: 2;
@@ -179,7 +180,8 @@
        text-align: left;
      }
      &__content {
-       width: 40%;
+      padding: 0 50px;
+      width: 40%;
       top: 50%;
       margin-top: -152px;
      }
