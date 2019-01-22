@@ -52,7 +52,7 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}") // Берем все jpeg и png из source/img
     .pipe(webp({quality: 90})) // Выставляем качество 90, чтобы не было артефактов
-    .pipe(gulp.dest("source/img")) // Складываем в папку
+    .pipe(gulp.dest("build/img")) // Складываем в папку
 });
 
 // Таск для генерации svg спрайта
@@ -114,6 +114,7 @@ gulp.task("build", gulp.series(
   "css",
   "scripts",
   "sprite",
+  "webp",
   "html"
   ));
 
