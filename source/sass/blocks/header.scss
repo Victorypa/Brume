@@ -129,10 +129,11 @@
  @media ($screen-lg) {
 
   .header {
+    height: auto;
     &::before {
       right: 50%;
       top: -15%;
-      bottom: 11%;
+      bottom: -13%;
     }
     &__container {
       width: 80%;
@@ -141,6 +142,7 @@
     &__wrapper  {
       height: 700px;
       background-image: url("../img/header-slide-desktop.jpg");
+      background-position: center;
 
       @media
       (-webkit-min-device-pixel-ratio: 2),
@@ -166,16 +168,12 @@
        padding-right: 0;
      }
      &__logo {
+       position: absolute;
+       right: 50%;
        margin-right: -30px;
        order: 2;
      }
-     &__info {
-      // width: 60%;
-      // margin: 0 auto;
-      // position: absolute;
-      // right: 50%;
-      // top: 20%;
-     }
+
      &__desc {
        text-align: left;
      }
@@ -184,12 +182,6 @@
       width: 40%;
       top: 50%;
       margin-top: -152px;
-     }
-     &__text {
-      max-width: 390px;
-      font-size: 0.875rem;
-      line-height: 26px;
-      margin-bottom: 26px;
      }
      &__arrow {
        display: none;
