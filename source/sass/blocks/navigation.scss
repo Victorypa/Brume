@@ -1,5 +1,5 @@
 .navigation {
-  display: none;
+  // display: none;
 
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@
   		content: '';
   		display: block;
 
-  		height: 3px;
+  		height: 2px;
   		width: 100%;
 
   		position: absolute;
@@ -93,16 +93,7 @@
  @media ($screen-m) and (max-width: 1200px) {
    .navigation {
      &__burger {
-       width: 60px;
-       	span, span::before, span::after {
-          height: 6px;
-        }
-        span::before {
-          margin-top: -20px;
-        }
-        span::after {
-          margin-top: 16px;
-        }
+       width: 50px;
      }
    }
  }
