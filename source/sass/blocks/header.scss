@@ -40,12 +40,20 @@
   }
 
   &__wrapper {
+    @supports (background: -webkit-image-set(url("../img/header-slide-mobile.webp") 1x)) {
+      background-image: url("../img/header-slide-mobile.webp");
+   }
+   
     @include bgimage(header-slide-mobile);
     height: 100vh;
 
     @media (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
       background-image: url('../img/header-slide-mobile@2x.jpg');
+      @supports (background: -webkit-image-set(url("../img/header-slide-mobile@2x.webp") 1x)) {
+        background-image: url("../img/header-slide-mobile@2x.webp");
+     }
+
     }
   }
 
@@ -103,10 +111,16 @@
  @media ($screen-m) and (max-width: 1200px) {
    .header {
       &__wrapper  {
+        @supports (background: -webkit-image-set(url("../img/header-slide-tablet.webp") 1x)) {
+          background-image: url("../img/header-slide-tablet.webp");
+       }
         background-image: url("../img/header-slide-tablet.jpg");
         @media
           (-webkit-min-device-pixel-ratio: 2),
           (min-resolution: 192dpi) {
+            @supports (background: -webkit-image-set(url("../img/header-slide-tablet@2x.webp") 1x)) {
+              background-image: url("../img/header-slide-tablet@2x.webp");
+           }
           background-image: url('../img/header-slide-tablet@2x.jpg');
         }
       }
@@ -141,12 +155,18 @@
     }
     &__wrapper  {
       height: 700px;
+      @supports (background: -webkit-image-set(url("../img/header-slide-desktop.webp") 1x)) {
+        background-image: url("../img/header-slide-desktop.webp");
+     }
       background-image: url("../img/header-slide-desktop.jpg");
       background-position: center;
 
       @media
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi) {
+        @supports (background: -webkit-image-set(url("../img/header-slide-desktop@2x.webp") 1x)) {
+          background-image: url("../img/header-slide-desktop@2x.webp");
+       }
         background-image: url('../img/header-slide-desktop@2x.jpg');
       }
     }
@@ -178,10 +198,10 @@
        text-align: left;
      }
      &__content {
-      padding: 0 50px;
-      width: 40%;
+      width: 35%;
       top: 50%;
-      margin-top: -220px;
+      left: 14%;
+      margin-top: -175px;
      }
      &__arrow {
        display: none;

@@ -1,6 +1,9 @@
 .order {
   position: relative;
 
+  @supports (background: -webkit-image-set(url("../img/order-mobile.webp") 1x)) {
+    background-image: url("../img/order-mobile.webp");
+ }
   @include bgimage(order-mobile);
   @include blue-overlay(-1);
 
@@ -93,7 +96,10 @@
        }
        &::after {
          content: '';
-         background: url('../img/order-desktop@2x.jpg');
+         @supports (background: -webkit-image-set(url("../img/order-desktop.webp") 1x)) {
+          background-image: url("../img/order-desktop.webp");
+        }
+         background-image: url('../img/order-desktop.jpg');
          background-size: cover;
          background-repeat: no-repeat;
          position: absolute;
@@ -103,6 +109,13 @@
          right: 0;
          bottom: 0;
          z-index: -1;
+         @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+           background-image: url('../img/order-desktop@2x.jpg');
+           @supports (background: -webkit-image-set(url("../img/order-desktop@2x.webp") 1x)) {
+             background-image: url("../img/order-desktop@2x.webp");
+          }
+         }
        }
 
        .primary-button--orange {

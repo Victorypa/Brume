@@ -6,6 +6,9 @@
 
   min-height: 620px;
 
+  @supports (background: -webkit-image-set(url("../img/video-mobile.webp") 1x)) {
+    background-image: url("../img/video-mobile.webp");
+ }
   @include bgimage(video-mobile);
 
   margin-top: 55px;
@@ -15,6 +18,9 @@
   @media
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
+    @supports (background: -webkit-image-set(url("../img/video-mobile@2x.webp") 1x)) {
+      background-image: url("../img/video-mobile@2x.webp");
+   }
     background-image: url("../../img/video-mobile@2x.jpg");
   }
 
@@ -71,23 +77,34 @@
   .video {
     height: calc(100vh + 55px);
     
+    @supports (background: -webkit-image-set(url("../img/video-tablet.webp") 1x)) {
+      background-image: url("../img/video-tablet.webp");
+    }
     background-image: url("../../img/video-tablet.jpg");
     background-position: center;
     @media
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
+      @supports (background: -webkit-image-set(url("../img/video-tablet@2x.webp") 1x)) {
+        background-image: url("../img/video-tablet@2x.webp");
+      }
       background-image: url("../../img/video-tablet@2x.jpg");
     }
   }
-
 }
 
 @media ($screen-lg) {
   .video {
+    @supports (background: -webkit-image-set(url("../img/video-desktop.webp") 1x)) {
+      background-image: url("../img/video-desktop.webp");
+    }
     background-image: url("../../img/video-desktop.jpg");
     @media
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
+      @supports (background: -webkit-image-set(url("../img/video-desktop@2x.webp") 1x)) {
+        background-image: url("../img/video-desktop@2x.webp");
+      }
       background-image: url("../../img/video-desktop@2x.jpg");
     }
   }
