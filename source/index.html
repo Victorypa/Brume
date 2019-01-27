@@ -20,8 +20,6 @@
 <body>
 
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-    <!-- <symbol id="icon-arrow-left"><path d="M2.117 12l7.527 6.235L9 19l-9-7.521L9 4l.645.764L2.116 11H24v1H2.117z"/></symbol>
-    <symbol id="icon-arrow-right"><path d="M21.883 12l-7.527 6.235L15 19l9-7.521L15 4l-.645.764L21.884 11H0v1h21.883z"/></symbol> -->
     <symbol id="icon-arrow-down" fill-rule="evenodd" clip-rule="evenodd">
       <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
     </symbol>
@@ -56,85 +54,124 @@
 
   <header class="header">
     <div class="header__container">
-      <div class="header__wrapper">
-        <div class="header__top">
-          <div class="header__logo">
+
+      <div class="header__top">
+        <div class="header__logo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/logo-desktop.webp 1x, img/logo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/logo-tablet.webp 1x, img/logo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x">
+
+
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.png 1x, img/logo-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.png 1x, img/logo-tablet@2x.png 2x">
+            <img src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" alt=brumelogo>
+          </picture>
+        </div>
+        <div class="header__phone">
+          <a href="tel:+78008234888" title="Позвонить менеджеру"><svg width="15" height="15">
+              <use x="0" y="0" xlink:href="#icon-call"></use>
+            </svg>+7 (800) 823 48 88</a>
+        </div>
+
+        <nav class="navigation">
+          <ul class="user-nav">
+            <li>
+              <a class="user-nav__link" href="#">Главная</a>
+            </li>
+            <li>
+              <a class="user-nav__link" href="#">Преимущества</a>
+            </li>
+            <li>
+              <a class="user-nav__link" href="#">Портфолио</a>
+            </li>
+            <li>
+              <a class="user-nav__link" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="user-nav__link" href="#">Контакты</a>
+            </li>
+            <li class="socials">
+              <a href="https://vk.com" title="Вконтакте">
+                <svg width="25" height="25">
+                  <use x="0" y="0" xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+
+              <a href="https://www.instagram.com" title="Инстаграмм">
+                <svg width="25" height="25">
+                  <use x="0" y="0" xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
+
+              <a href="https://www.facebook.com/" title="Фейсбук">
+                <svg width="25" height="25">
+                  <use x="0" y="0" xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="navigation__burger" aria-label="open the navigation" title="Меню">
+          <span></span>
+        </button>
+      </div>
+
+      <ul class="header__slider">
+        <li>
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop.webp 1x, img/header-slide-desktop.webp@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-tablet.webp 1x, img/header-slide-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/header-slide-mobile.webp 1x, img/header-slide-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/header-slide-desktop.jpg 1x, img/header-slide-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/header-slide-tablet.jpg 1x, img/header-slide-tablet@2x.jpg 2x">
+            <img src="img/header-slide-mobile.jpg" srcset="img/header-slide-mobile@2x.jpg 2x"
+              alt="Brume">
+          </picture>
+        </li>
+        <!-- <li>
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/logo-desktop.webp 1x, img/logo-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)" srcset="img/logo-tablet.webp 1x, img/logo-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x">
-
-
-              <source media="(min-width: 1200px)" srcset="img/logo-desktop.png 1x, img/logo-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.png 1x, img/logo-tablet@2x.png 2x">
-              <img src="img/logo-mobile.png" srcset="img/logo-mobile@2x.png 2x" alt=brumelogo>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop.webp 1x, img/header-slide-desktop.webp@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-tablet.webp 1x, img/header-slide-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/header-slide-mobile.webp 1x, img/header-slide-mobile@2x.webp 2x">
+  
+              <source media="(min-width: 1200px)" srcset="img/header-slide-desktop.jpg 1x, img/header-slide-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/header-slide-tablet.jpg 1x, img/header-slide-tablet@2x.jpg 2x">
+              <img class="portfolio__img" src="img/header-slide-mobile.jpg" srcset="img/header-slide-mobile@2x.jpg 2x"
+                alt="Brume">
             </picture>
-          </div>
-          <div class="header__phone">
-            <a href="tel:+78008234888" title="Позвонить менеджеру"><svg width="15" height="15">
-                <use x="0" y="0" xlink:href="#icon-call"></use>
-              </svg>+7 (800) 823 48 88</a>
-          </div>
+          </li>
+          <li>
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop.webp 1x, img/header-slide-desktop.webp@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-tablet.webp 1x, img/header-slide-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/header-slide-mobile.webp 1x, img/header-slide-mobile@2x.webp 2x">
+    
+                <source media="(min-width: 1200px)" srcset="img/header-slide-desktop.jpg 1x, img/header-slide-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/header-slide-tablet.jpg 1x, img/header-slide-tablet@2x.jpg 2x">
+                <img class="portfolio__img" src="img/header-slide-mobile.jpg" srcset="img/header-slide-mobile@2x.jpg 2x"
+                  alt="Brume">
+              </picture>
+            </li> -->
+      </ul>
 
-          <nav class="navigation">
-            <ul class="user-nav">
-              <li>
-                <a class="user-nav__link" href="#">Главная</a>
-              </li>
-              <li>
-                <a class="user-nav__link" href="#">Преимущества</a>
-              </li>
-              <li>
-                <a class="user-nav__link" href="#">Портфолио</a>
-              </li>
-              <li>
-                <a class="user-nav__link" href="#">Отзывы</a>
-              </li>
-              <li>
-                <a class="user-nav__link" href="#">Контакты</a>
-              </li>
-              <li class="socials">
-                <a href="https://vk.com" title="Вконтакте">
-                  <svg width="25" height="25">
-                    <use x="0" y="0" xlink:href="#icon-vk"></use>
-                  </svg>
-                </a>
 
-                <a href="https://www.instagram.com" title="Инстаграмм">
-                  <svg width="25" height="25">
-                    <use x="0" y="0" xlink:href="#icon-insta"></use>
-                  </svg>
-                </a>
+      <div class="header__content">
 
-                <a href="https://www.facebook.com/" title="Фейсбук">
-                  <svg width="25" height="25">
-                    <use x="0" y="0" xlink:href="#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <button type="button" class="navigation__burger" aria-label="open the navigation" title="Меню">
-            <span></span>
-          </button>
-        </div>
-        <div class="header__content">
-
-            <h1 class="main-title">
-              Дизайн <br>
-              интерьеров
-            </h1>
-            <p class="header__desc">
-              Воплотим в&nbsp;жизнь интерьер, который будет радовать лаконичностью и&nbsp;уютом.
-            </p>
-            <a href="#" class="primary-button">Заказать дизайн</a>
-            <a href="#" class="header__arrow" title="О нас">
-              <svg class="bounce" width="25" height="25">
-                <use x="0" y="0" xlink:href="#icon-arrow-down"></use>
-              </svg>
-            </a>
-
-        </div>
+        <h1 class="main-title">
+          Дизайн <br>
+          интерьеров
+        </h1>
+        <p class="header__desc">
+          Воплотим в&nbsp;жизнь интерьер, который будет радовать лаконичностью и&nbsp;уютом.
+        </p>
+        <a href="#" class="primary-button">Заказать дизайн</a>
+        <a href="#" class="header__arrow" title="О нас">
+          <svg class="bounce" width="25" height="25">
+            <use x="0" y="0" xlink:href="#icon-arrow-down"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </header>
@@ -217,8 +254,8 @@
           <figure>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/portfolio-slide-2-desktop.webp 1x, img/portfolio-slide-2-desktop@2x.webp 2x">
-               <source type="image/webp" media="(min-width: 768px)" srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-               <source type="image/webp" srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
               <source media="(min-width: 1200px)" srcset="img/portfolio-slide-2-desktop.jpg 1x, img/portfolio-slide-2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
@@ -426,7 +463,7 @@
       <div class="main-title main-title--section">Отзывы наших клиентов</div>
       <div class="review__card">
         <picture>
-           <source type="image/webp" srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
           <img class="review__img img" src="img/review-mobile.jpg" srcset="img/review-mobile@2x.jpg 2x" alt="Александра Холодная">
         </picture>
         <div class="review__content">
