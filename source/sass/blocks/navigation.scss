@@ -93,8 +93,14 @@
 }
  @media ($screen-m) and (max-width: 1200px) {
    .navigation {
-     &__burger {
-       width: 50px;
-     }
+    //  &__burger {
+		// 	//  width: 50px;
+		// 	 span::before {
+		// 		margin-top: -15px;
+		// 	}
+		// 	span::after {
+		// 		margin-top: 15px;
+		// 	}
+    //  }
    }
  }
