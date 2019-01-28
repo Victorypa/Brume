@@ -1,5 +1,5 @@
 .navigation {
-  display: none;
+  // display: none;
 
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   height: 100%;
 
   position: absolute;
-  top: 0;
+  top: -100%;
   left: 0;
   right: 0;
 
@@ -38,16 +38,18 @@
 
 			padding: 20px 0;
 		}
+    .socials {
+      padding: 30px 0;
+    }
 	}
 	&.show {
-		top: -100%;
+		top: 0;
 	}
   &__burger {
   	width: 33px;
   	height: 25px;
 
 		position: relative;
-		// right: -300px;
 
 		background-color: transparent;
 		border: 0;
@@ -91,16 +93,19 @@
   	}
   }
 }
- @media ($screen-m) and (max-width: 1200px) {
+ @media ($screen-lg) {
    .navigation {
-    //  &__burger {
-		// 	//  width: 50px;
-		// 	 span::before {
-		// 		margin-top: -15px;
-		// 	}
-		// 	span::after {
-		// 		margin-top: 15px;
-		// 	}
-    //  }
+     height: auto;
+     top: -100%;
+     left: 10%;
+     right: 10%;
+     bottom: auto;
+     &.show {
+       height: auto;
+       top: 85px;
+       left: 10%;
+       right: 10%;
+       bottom: 0;
+     }
    }
  }
