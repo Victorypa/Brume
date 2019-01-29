@@ -78,7 +78,7 @@
 
   		transition: all 0.2s;
   	}
-  	&-active span{
+  	&.show span{
   		background-color: transparent;
   		&::before {
   			margin-top: 0;

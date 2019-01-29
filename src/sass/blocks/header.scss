@@ -57,7 +57,7 @@
     position: absolute;
     padding: 0 15px;
     box-sizing: border-box;
-    top: 25%;
+    top: 20%;
     text-align: center;
   }
 
@@ -104,11 +104,11 @@
   }
 }
 
-
  @media ($screen-m) and (max-width: 1200px) {
    .header {
       .main-title {
-        font-size: 6.25rem;
+        font-size: 5.25rem;
+
         line-height: 100px;
       }
       &__top {
@@ -120,9 +120,6 @@
       &__desc {
         padding: 30px 10px;
       }
-      &__slider {
-
-      }
    }
  }
 
@@ -132,7 +129,6 @@
     height: auto;
     &::before {
       right: 50%;
-      // top: -15%;
       bottom: -86px;
     }
     &__container {
@@ -152,8 +148,6 @@
        text-align: left;
      }
      &__top {
-       // position: relative;
-
        right: 0;
        left: 0;
        padding-left: 0;
