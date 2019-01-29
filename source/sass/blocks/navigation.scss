@@ -6,7 +6,7 @@
 
   position: absolute;
   top: -300%;
-  
+
   left: 0;
   right: 0;
 
@@ -43,6 +43,7 @@
 	}
 	&.show {
 		top: 0;
+    height: 100vh;
 	}
   &__burger {
   	width: 33px;
@@ -92,6 +93,16 @@
   	}
   }
 }
+
+ @media ($screen-m) {
+   .navigation {
+     &.show {
+      height: 100vh;
+      top: 0;
+     }
+   }
+ }
+
  @media ($screen-lg) {
    .navigation {
      height: auto;
