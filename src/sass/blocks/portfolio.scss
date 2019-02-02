@@ -67,7 +67,7 @@
       width: 15%;
       height: 600px;
       flex-grow: 1;
-      @include transition-animation;
+      transition: 0.7s;
       @include blue-overlay(1);
 
       &:hover {
