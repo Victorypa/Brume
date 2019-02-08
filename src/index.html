@@ -117,7 +117,7 @@
         </button>
       </div>
 
-      <ul class="header__slider">
+      <ul class="header__slider my-slider">
         <li>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop.webp 1x, img/header-slide-desktop@2x.webp 2x">
@@ -129,7 +129,18 @@
             <img src="img/header-slide-mobile.jpg" srcset="img/header-slide-mobile@2x.jpg 2x" alt="Brume">
           </picture>
         </li>
-        <!-- <li>
+        <li>
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop.webp 1x, img/header-slide-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-tablet.webp 1x, img/header-slide-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/header-slide-mobile.webp 1x, img/header-slide-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/header-slide-desktop.jpg 1x, img/header-slide-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/header-slide-tablet.jpg 1x, img/header-slide-tablet@2x.jpg 2x">
+            <img src="img/header-slide-mobile.jpg" srcset="img/header-slide-mobile@2x.jpg 2x" alt="Brume">
+          </picture>
+        </li>
+        <li>
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop.webp 1x, img/header-slide-desktop.webp@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-tablet.webp 1x, img/header-slide-tablet@2x.webp 2x">
@@ -152,8 +163,9 @@
                 <img class="portfolio__img" src="img/header-slide-mobile.jpg" srcset="img/header-slide-mobile@2x.jpg 2x"
                   alt="Brume">
               </picture>
-            </li> -->
+            </li>
       </ul>
+
 
 
       <div class="header__content">
@@ -515,16 +527,22 @@
     <div class="footer__copyright">
       <span>BRUME interior, 2017 ©</span>
       <a href="#">HolodnayaDesign</a>
-      <div class="my-slider">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
     </div>
 
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js" defer></script>
-  <script src="js/script.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+  <script>
+    var slider = tns({
+      "container": ".my-slider",
+      "items": 1,
+  "arrowKeys": true,
+  "mouseDrag": true,
+  "slideBy": "page",
+  "swipeAngle": false,
+  "speed": 400
+    });
+  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
