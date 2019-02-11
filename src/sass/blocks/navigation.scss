@@ -75,12 +75,12 @@
   	span::before {
   		margin-top: -11px;
 
-  		transition: all 0.2s;
+  		transition: all 0.4s;
   	}
   	span::after {
   		margin-top: 9px;
 
-  		transition: all 0.2s;
+  		transition: all 0.4s;
   	}
   	&.show span{
   		background-color: transparent;
