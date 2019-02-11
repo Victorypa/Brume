@@ -131,27 +131,26 @@
         </li>
         <li>
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop.webp 1x, img/header-slide-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-tablet.webp 1x, img/header-slide-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/header-slide-mobile.webp 1x, img/header-slide-mobile@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop2.webp 1x, img/header-slide-desktop2@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-tablet2.webp 1x, img/header-slide-tablet2@2x.webp 2x">
+            <source type="image/webp" srcset="img/header-slide-mobile2.webp 1x, img/header-slide-mobile2@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/header-slide-desktop.jpg 1x, img/header-slide-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/header-slide-tablet.jpg 1x, img/header-slide-tablet@2x.jpg 2x">
-            <img src="img/header-slide-mobile.jpg" srcset="img/header-slide-mobile@2x.jpg 2x" alt="Brume">
+            <source media="(min-width: 1200px)" srcset="img/header-slide-desktop2.jpg 1x, img/header-slide-desktop2@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/header-slide-tablet2.jpg 1x, img/header-slide-tablet2@2x.jpg 2x">
+            <img src="img/header-slide-mobile2.jpg" srcset="img/header-slide-mobile2@2x.jpg 2x" alt="Brume">
           </picture>
         </li>
         <li>
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop.webp 1x, img/header-slide-desktop.webp@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-tablet.webp 1x, img/header-slide-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/header-slide-mobile.webp 1x, img/header-slide-mobile@2x.webp 2x">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/header-slide-desktop3.webp 1x, img/header-slide-desktop3@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/header-slide-tablet3.webp 1x, img/header-slide-tablet3@2x.webp 2x">
+            <source type="image/webp" srcset="img/header-slide-mobile3.webp 1x, img/header-slide-mobile3@2x.webp 2x">
 
-              <source media="(min-width: 1200px)" srcset="img/header-slide-desktop.jpg 1x, img/header-slide-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/header-slide-tablet.jpg 1x, img/header-slide-tablet@2x.jpg 2x">
-              <img class="portfolio__img" src="img/header-slide-mobile.jpg" srcset="img/header-slide-mobile@2x.jpg 2x"
-                alt="Brume">
-            </picture>
-          </li>
+            <source media="(min-width: 1200px)" srcset="img/header-slide-desktop3.jpg 1x, img/header-slide-desktop3@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/header-slide-table3t.jpg 1x, img/header-slide-tablet3@2x.jpg 2x">
+            <img src="img/header-slide-mobile3.jpg" srcset="img/header-slide-mobile3@2x.jpg 2x" alt="Brume">
+          </picture>
+        </li>
       </ul>
 
       <div class="header__content">
@@ -519,8 +518,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
   <script>
     var slider = tns({
-      "container": ".my-slider",
-      "items": 1,
+  "container": ".my-slider",
+  "items": 1,
   "arrowKeys": true,
   "mouseDrag": true,
   "slideBy": "page",
@@ -530,6 +529,9 @@
   "autoplayTimeout": 2500,
   "controls": false,
   "navPosition": "bottom",
+  "preventActionWhenRunning": "true",
+  "preventScrollOnTouch": "auto"
+
     });
   </script>
   <script src="js/script.min.js"></script>
