@@ -116,16 +116,10 @@
   }
 }
 
-// @media only screen and (max-width: 972px) {
-//   .header .tns-nav {
-//     display: none;
-//   }
-// }
-
 @media only screen and (max-width: 1200px) {
   .header {
     &__top {
-      position: absolute;
+      // position: absolute;
       left: 0;
       right: 0;
     }
