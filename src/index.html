@@ -186,7 +186,7 @@
         <li class="about__content">
           <h2 class="about__caption">Мы&nbsp;&mdash; профессионалы своего дела</h2>
           <div class="about__desc">
-            Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и&nbsp;тренинги, а&nbsp;студия уже
+            Наши дизайнеры постоянно повышают квалификацию, посещают курсы и&nbsp;тренинги, а&nbsp;студия уже
             реализовала
             свыше
             1000 дизайн-проектов.
@@ -321,15 +321,37 @@
       <div class="main-title main-title--section">Наши услуги</div>
       <div class="services__wrapper">
         <ul class="services__list">
-          <li class="services__item"><a href="#">Дизайн отдельных комнат</a></li>
-          <li class="services__item"><a href="#">Дизайн жилого помещения</a></li>
-          <li class="services__item"><a href="#">Дизайн коммерческих объектов</a></li>
-          <li class="services__item"><a href="#">Ремонт под ключ</a></li>
-          <li class="services__item"><a href="#">Отделочные работы</a></li>
-          <li class="services__item"><a href="#">Выезд дизайнера на дом</a></li>
+          <li class="services__item"><a class="services__link" onclick="openTab(event, 'livingrooms')" id="defaultOpen">Дизайн отдельных комнат</a></li>
+          <li class="services__item"><a class="services__link" onclick="openTab(event, 'rooms')">Дизайн жилого помещения</a></li>
+          <li class="services__item"><a class="services__link" onclick="openTab(event, 'commercial')">Дизайн коммерческих объектов</a></li>
+          <li class="services__item"><a class="services__link" onclick="openTab(event, 'repair')">Ремонт под ключ</a></li>
+          <li class="services__item"><a class="services__link" onclick="openTab(event, 'completion-work')">Отделочные работы</a></li>
+          <li class="services__item"><a class="services__link" onclick="openTab(event, 'departure')">Выезд дизайнера на дом</a></li>
         </ul>
 
-        <div class="services__content">
+<!--         
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'London')" id="defaultOpen">London</button>
+          <button class="tablinks" onclick="openTab(event, 'Paris')">Paris</button>
+          <button class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</button>
+        </div> -->
+        
+        <!-- <div id="London" class="tabcontent">
+          <h3>London</h3>
+          <p>London is the capital city of England.</p>
+        </div>
+        
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p> 
+        </div> -->
+        
+        <!-- <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div> -->
+
+        <div class="services__content tabcontent"   id="livingrooms">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
@@ -342,6 +364,122 @@
           <div class="services__quantity">
             <div class="services__caption">Дизайн отдельных комнат</div>
             <div class="services__number">4 проекта</div>
+          </div>
+          <div class="services__info">
+            <div class="services__desc">
+              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
+            </div>
+            <button class="primary-button primary-button--transparent text-center">Консультация</button>
+          </div>
+
+        </div>
+        
+        <div class="services__content tabcontent"  id="rooms">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
+            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x" alt="Brume">
+          </picture>
+          <div class="services__quantity">
+            <div class="services__caption">Дизайн жилого помещения</div>
+            <div class="services__number">100 проектов</div>
+          </div>
+          <div class="services__info">
+            <div class="services__desc">
+              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
+            </div>
+            <button class="primary-button primary-button--transparent text-center">Консультация</button>
+          </div>
+
+        </div>
+        <div class="services__content tabcontent"  id="repair">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
+            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x" alt="Brume">
+          </picture>
+          <div class="services__quantity">
+            <div class="services__caption">Ремонт под ключ</div>
+            <div class="services__number">138 проектов</div>
+          </div>
+          <div class="services__info">
+            <div class="services__desc">
+              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
+            </div>
+            <button class="primary-button primary-button--transparent text-center">Консультация</button>
+          </div>
+
+        </div>
+        <div class="services__content tabcontent"  id="commercial">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
+            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x" alt="Brume">
+          </picture>
+          <div class="services__quantity">
+            <div class="services__caption">Дизайн коммерческих объектов</div>
+            <div class="services__number">48 проектов</div>
+          </div>
+          <div class="services__info">
+            <div class="services__desc">
+              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
+            </div>
+            <button class="primary-button primary-button--transparent text-center">Консультация</button>
+          </div>
+
+        </div>
+        <div class="services__content tabcontent"  id="completion-work">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
+            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x" alt="Brume">
+          </picture>
+          <div class="services__quantity">
+            <div class="services__caption">Отделочные работы</div>
+            <div class="services__number">20 проектов</div>
+          </div>
+          <div class="services__info">
+            <div class="services__desc">
+              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
+              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
+            </div>
+            <button class="primary-button primary-button--transparent text-center">Консультация</button>
+          </div>
+
+        </div>
+        <div class="services__content tabcontent"  id="departure">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
+            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x" alt="Brume">
+          </picture>
+          <div class="services__quantity">
+            <div class="services__caption">Выезд дизайнера на дом</div>
+            <div class="services__number">159 проектов</div>
           </div>
           <div class="services__info">
             <div class="services__desc">

@@ -17,17 +17,22 @@
 
   &__item {
     padding: 5px 0;
-    a {
-      display: block;
-      font-family: $raleway-light;
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: $tab-grey;
-      line-height: 2.5rem;
-      @include transition-animation;
-      &:hover {
-        color: $hover-link;
-      }
+  }
+
+  &__link {
+    display: block;
+    font-family: $raleway-light;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $tab-grey;
+    line-height: 2.5rem;
+    @include transition-animation;
+    &:hover {
+      color: $hover-link;
+    }
+    &.active {
+      padding-left: 20px;
+      color: #000;
     }
   }
   &__quantity {
@@ -58,12 +63,11 @@
     }
     &__list {
       display: block;
-
-      padding-right: 30px;
     }
     &__item {
       width: auto;
       margin-right: 30px;
+      width: 250px; 
     }
     &__info {
       display: flex;
