@@ -1,6 +1,7 @@
 .portfolio {
   &__tab {
     padding: 5px 0;
+    cursor: pointer;
   }
   &__link {
     font-family: $raleway-light;
@@ -11,6 +12,9 @@
     @include transition-animation;
     &:hover {
       color: $hover-link;
+    }
+    &.active {
+      color: #000;
     }
   }
   &__img {
@@ -53,11 +57,6 @@
     &__tab {
       margin-right: 50px;
       margin-bottom: 30px;
-      a {
-        &.active {
-          color: #000;
-        }
-      }
     }
     &__img {
           height: 100%;
