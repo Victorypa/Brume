@@ -236,368 +236,400 @@
       <div class="main-title main-title--section">Портфолио</div>
       <ul class="portfolio__tabs">
         <li class="portfolio__tab"><a class="portfolio__link" onclick="openTab(event, 'allprojects')"
-            >Все проекты</a></li>
+            id="defaultOpen">Все проекты</a></li>
         <li class="portfolio__tab"><a class="portfolio__link" onclick="openTab(event, 'interiordesign')">Дизайн
             интерьеров</a></li>
         <li class="portfolio__tab"> <a class="portfolio__link" onclick="openTab(event, 'decorationwork')">Отделочные работы</a></li>
       </ul>
-      <div class="tabcontent" id="allprojects">
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-1-desktop.webp 1x, img/portfolio-slide-1-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-1-desktop.jpg 1x, img/portfolio-slide-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Дизайн интерьера
-                <br> гостиной</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc ">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-2-desktop.webp 1x, img/portfolio-slide-2-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+        <div class="tabcontent" id="allprojects">
+          <ul class="portfolio__list my-second-slider">
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-1-desktop.webp 1x, img/portfolio-slide-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-2-desktop.jpg 1x, img/portfolio-slide-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Дизайн столовой <br>
-                в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc ">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-3-desktop.webp 1x, img/portfolio-slide-3-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-1-desktop.jpg 1x, img/portfolio-slide-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн интерьера
+                  <br> гостиной</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-2-desktop.webp 1x, img/portfolio-slide-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-3-desktop.jpg 1x, img/portfolio-slide-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Лофт интерьер <br>для отеля Hiloft</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc ">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-4-desktop.webp 1x, img/portfolio-slide-4-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-2-desktop.jpg 1x, img/portfolio-slide-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн столовой <br>
+                  в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-3-desktop.webp 1x, img/portfolio-slide-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-4-desktop.jpg 1x, img/portfolio-slide-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Дизайн столовой <br>
-                в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="tabcontent" id="interiordesign">
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc ">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-3-desktop.webp 1x, img/portfolio-slide-3-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-3-desktop.jpg 1x, img/portfolio-slide-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Лофт интерьер <br>для отеля Hiloft</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-4-desktop.webp 1x, img/portfolio-slide-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-3-desktop.jpg 1x, img/portfolio-slide-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Лофт интерьер <br>для отеля Hiloft</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc ">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-4-desktop.webp 1x, img/portfolio-slide-4-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-4-desktop.jpg 1x, img/portfolio-slide-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн столовой <br>
+                  в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-4-desktop.webp 1x, img/portfolio-slide-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-4-desktop.jpg 1x, img/portfolio-slide-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Дизайн столовой <br>
-                в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc ">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-2-desktop.webp 1x, img/portfolio-slide-2-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-4-desktop.jpg 1x, img/portfolio-slide-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн столовой <br>
+                  в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tabcontent" id="interiordesign">
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-3-desktop.webp 1x, img/portfolio-slide-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-2-desktop.jpg 1x, img/portfolio-slide-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Дизайн столовой <br>
-                в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-1-desktop.webp 1x, img/portfolio-slide-1-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-3-desktop.jpg 1x, img/portfolio-slide-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Лофт интерьер <br>для отеля Hiloft</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-4-desktop.webp 1x, img/portfolio-slide-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-1-desktop.jpg 1x, img/portfolio-slide-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Дизайн интерьера
-                <br> гостиной</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="tabcontent" id="decorationwork">
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-1-desktop.webp 1x, img/portfolio-slide-1-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-4-desktop.jpg 1x, img/portfolio-slide-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн столовой <br>
+                  в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-2-desktop.webp 1x, img/portfolio-slide-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-1-desktop.jpg 1x, img/portfolio-slide-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Дизайн интерьера
-                <br> гостиной</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc ">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-2-desktop.webp 1x, img/portfolio-slide-2-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-2-desktop.jpg 1x, img/portfolio-slide-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн столовой <br>
+                  в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-1-desktop.webp 1x, img/portfolio-slide-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-2-desktop.jpg 1x, img/portfolio-slide-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Дизайн столовой <br>
-                в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc ">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-3-desktop.webp 1x, img/portfolio-slide-3-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-1-desktop.jpg 1x, img/portfolio-slide-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн интерьера
+                  <br> гостиной</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tabcontent" id="decorationwork">
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-1-desktop.webp 1x, img/portfolio-slide-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-3-desktop.jpg 1x, img/portfolio-slide-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Лофт интерьер <br>для отеля Hiloft</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-          <li class="portfolio__item">
-            <button type="button" class="portfolio__button btn-no-bgc ">
-              <svg class="portfolio__icon" width="84" height="84">
-                <use x="0" y="0" xlink:href="#icon-plus"></use>
-              </svg>
-            </button>
-            <figure>
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-4-desktop.webp 1x, img/portfolio-slide-4-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-1-desktop.jpg 1x, img/portfolio-slide-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн интерьера
+                  <br> гостиной</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-2-desktop.webp 1x, img/portfolio-slide-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)"
-                  srcset="img/portfolio-slide-4-desktop.jpg 1x, img/portfolio-slide-4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                  srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-              </picture>
-              <figcaption class="portfolio__caption">Дизайн столовой <br>
-                в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
-            </figure>
-            <div class="portfolio__rotate-text">
-              Дизайн интерьеров
-            </div>
-          </li>
-        </ul>
-      </div>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-2-desktop.jpg 1x, img/portfolio-slide-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн столовой <br>
+                  в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-3-desktop.webp 1x, img/portfolio-slide-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-3-desktop.jpg 1x, img/portfolio-slide-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Лофт интерьер <br>для отеля Hiloft</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <button type="button" class="portfolio__button btn-no-bgc ">
+                <svg class="portfolio__icon" width="84" height="84">
+                  <use x="0" y="0" xlink:href="#icon-plus"></use>
+                </svg>
+              </button>
+              <figure>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-4-desktop.webp 1x, img/portfolio-slide-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1200px)"
+                    srcset="img/portfolio-slide-4-desktop.jpg 1x, img/portfolio-slide-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                </picture>
+                <figcaption class="portfolio__caption">Дизайн столовой <br>
+                  в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
+              </figure>
+              <div class="portfolio__rotate-text">
+                Дизайн интерьеров
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
     </div>
   </section>
 
@@ -963,6 +995,22 @@
       "preventScrollOnTouch": "auto"
 
     });
+    var slider = tns({
+      "container": ".my-second-slider",
+      "items": 4,
+      "arrowKeys": true,
+      "mouseDrag": true,
+      "slideBy": "page",
+      "swipeAngle": false,
+      "speed": 900,
+      "autoplay": true,
+      "autoplayTimeout": 3500,
+      "controls": false,
+      "preventActionWhenRunning": "true",
+      "preventScrollOnTouch": "auto"
+
+    });
+
   </script>
   <script src="js/script.min.js"></script>
 </body>

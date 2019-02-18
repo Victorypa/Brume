@@ -9,12 +9,12 @@ let menu = document.getElementById('menu')
 
 
 function openTab(evt, TabName) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("services__link");
+  tablinks = document.getElementsByClassName("portfolio__link");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
@@ -24,5 +24,3 @@ function openTab(evt, TabName) {
 
 
 document.getElementById("defaultOpen").click();
-
-   
