@@ -128,7 +128,7 @@
         </button>
       </div>
 
-      <ul class="header__slider my-slider">
+      <ul class="header__slider header-slider">
         <li>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)"
@@ -243,7 +243,7 @@
       </ul>
 
         <div class="tabcontent" id="allprojects">
-          <ul class="portfolio__list my-second-slider">
+          <ul class="portfolio__list portfolio-slider">
             <li class="portfolio__item">
               <button type="button" class="portfolio__button btn-no-bgc">
                 <svg class="portfolio__icon" width="84" height="84">
@@ -628,8 +628,6 @@
             </li>
           </ul>
         </div>
-
-
     </div>
   </section>
 
@@ -915,23 +913,43 @@
   <section class="review">
     <div class="container">
       <div class="main-title main-title--section">Отзывы наших клиентов</div>
-      <div class="review__card">
-        <picture>
-          <source type="image/webp" srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
-          <img class="review__img img" src="img/review-mobile.jpg" srcset="img/review-mobile@2x.jpg 2x"
-            alt="Александра Холодная">
-        </picture>
-        <div class="review__content">
-          <div class="review__caption">Александра Холодная<br>
-            <span>Услуга: "Интерьер детской"</span></div>
-          <div class="review__text">
-            Спасибо студии за&nbsp;замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и&nbsp;легко,
-            команда
-            выполнила все точно в&nbsp;срок, сделали все как мы&nbsp;и&nbsp;хотели.
-            В&nbsp;следующий раз обратимся к&nbsp;BRUME!
+      <div class="review-slider">
+        <div class="review__card">
+          <picture>
+            <source type="image/webp" srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
+            <img class="review__img img" src="img/review-mobile.jpg" srcset="img/review-mobile@2x.jpg 2x"
+              alt="Александра Холодная">
+          </picture>
+          <div class="review__content">
+            <div class="review__caption">Александра Холодная<br>
+              <span>Услуга: "Интерьер детской"</span></div>
+            <div class="review__text">
+              Спасибо студии за&nbsp;замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и&nbsp;легко,
+              команда
+              выполнила все точно в&nbsp;срок, сделали все как мы&nbsp;и&nbsp;хотели.
+              В&nbsp;следующий раз обратимся к&nbsp;BRUME!
+            </div>
+          </div>
+        </div>
+        <div class="review__card">
+          <picture>
+            <source type="image/webp" srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
+            <img class="review__img img" src="img/review-mobile.jpg" srcset="img/review-mobile@2x.jpg 2x"
+              alt="Александра Холодная">
+          </picture>
+          <div class="review__content">
+            <div class="review__caption">Александра Холодная<br>
+              <span>Услуга: "Интерьер детской"</span></div>
+            <div class="review__text">
+              Спасибо студии за&nbsp;замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и&nbsp;легко,
+              команда
+              выполнила все точно в&nbsp;срок, сделали все как мы&nbsp;и&nbsp;хотели.
+              В&nbsp;следующий раз обратимся к&nbsp;BRUME!
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -980,7 +998,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
   <script>
     var slider = tns({
-      "container": ".my-slider",
+      "container": ".header-slider",
       "items": 1,
       "arrowKeys": true,
       "mouseDrag": true,
@@ -996,12 +1014,10 @@
 
     });
     var slider = tns({
-      "container": ".my-second-slider",
+      "container": ".portfolio-slider",
       "items": 4,
-      "arrowKeys": true,
       "mouseDrag": true,
-      "slideBy": "page",
-      "swipeAngle": false,
+      "rewind": true,
       "speed": 900,
       "autoplay": true,
       "autoplayTimeout": 3500,
@@ -1010,6 +1026,23 @@
       "preventScrollOnTouch": "auto"
 
     });
+    var slider = tns({
+      "container": ".review-slider",
+      "items": 1,
+      "arrowKeys": true,
+      "mouseDrag": true,
+      "slideBy": "page",
+      "swipeAngle": false,
+      "speed": 600,
+      "fixedWidth": 400,
+      // "autoplay": true,
+      // "autoplayTimeout": 2500,
+      "controls": false,
+      "navPosition": "bottom",
+      "preventActionWhenRunning": "true",
+      "preventScrollOnTouch": "auto"
+    });
+
 
   </script>
   <script src="js/script.min.js"></script>

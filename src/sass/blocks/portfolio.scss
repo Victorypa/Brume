@@ -9,6 +9,7 @@
     font-weight: 600;
     color: $tab-grey;
     line-height: 2.5rem;
+    cursor: pointer;  
     @include transition-animation;
     &:hover {
       color: $hover-link;
@@ -32,6 +33,25 @@
   &__rotate-text {
     display: none;
   }
+}
+
+.tns {
+ &-nav {
+   position: absolute;
+   right: 10%;
+   bottom: -5%;
+   &-active {
+     background-color: #000;
+   }
+   button {
+     padding-right: 25px;
+     margin-left: 10px;
+     border: 0;
+   }
+ }
+ &-outer [data-action] {
+     display: none;
+ }
 }
 
 @media ($screen-m) {
