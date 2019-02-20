@@ -1,4 +1,5 @@
 .review {
+  position: relative;
   text-align: center;
 
   .main-title {
@@ -19,13 +20,30 @@
       font-size: 0.9rem;
     }
   }
-  &__img {
-    margin-top: -50px;
-  }
   &__text {
     font-family: $raleway-light;
     color: $content-text;
     font-size: 1.25rem;
+  }
+  .tns {
+   &-nav {
+     position: absolute;
+     right: 50%;
+     bottom: 5%;
+
+     margin-right: -41px;
+     &-active {
+       background-color: #000;
+     }
+     button {
+       padding-right: 25px;
+       margin-left: 10px;
+       border: 0;
+     }
+   }
+   &-outer [data-action] {
+       display: none;
+   }
   }
 }
 
@@ -44,10 +62,6 @@
 
        text-align: left;
     }
-     &__img {
-      margin-top: 0;
-      margin-right: -40px;
-     }
    }
  }
 
@@ -56,12 +70,12 @@
     .main-title {
       text-align: left;
    }
+   &__card {
+     justify-content: space-between;
+   }
    &__content {
-    width: 90%;
+    width: 65%;
     padding-left: 15px;
-  }
-  &__img {
-    margin-right: -60px;
   }
  }
 }
