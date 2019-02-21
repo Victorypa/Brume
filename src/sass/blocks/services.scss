@@ -31,7 +31,7 @@
     &:hover {
       color: $hover-link;
     }
-    &.active {
+    &.is-showed {
       padding-left: 20px;
       color: #000;
     }
@@ -39,7 +39,33 @@
   &__quantity {
     display: none;
   }
+
+  .tabs-wrapper {
+    margin: 10px;
+  }
+
+  .tabs-content {
+    padding: 15px;
+  }
+
+
+  .tab-item {
+    display: none;
+  }
+
+  .tab-title.is-showed {
+    padding-left: 20px;
+    color: #000;
+  }
+
+
+  .tab-item.is-showed {
+    display: block;
+  }
+
 }
+
+
 
 @media ($screen-m) {
   .services {
@@ -54,6 +80,7 @@
     }
   }
 }
+
 
 @media ($screen-lg) {
   .services {
