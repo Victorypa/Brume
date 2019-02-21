@@ -233,15 +233,14 @@
   <section class="portfolio">
     <div class="container">
       <div class="main-title main-title--section">Портфолио</div>
-      <ul class="portfolio__tabs">
-        <li class="portfolio__tab"><a class="portfolio__link" onclick="openTab(event, 'allprojects')"
-            id="defaultOpen">Все проекты</a></li>
-        <li class="portfolio__tab"><a class="portfolio__link" onclick="openTab(event, 'interiordesign')">Дизайн
-            интерьеров</a></li>
-        <li class="portfolio__tab"> <a class="portfolio__link" onclick="openTab(event, 'decorationwork')">Отделочные работы</a></li>
+      <ul class="portfolio__tabs tabs-header">
+        <li class="portfolio__tab tab-title" data-state="active">Все проекты</li>
+        <li class="portfolio__tab tab-title">Дизайн интерьеров</li>
+        <li class="portfolio__tab tab-title">Отделочные работы</li>
       </ul>
 
-        <div class="tabcontent" id="allprojects">
+      <div class="tabs-content">
+        <div class="tab-item">
           <div class="portfolio__list portfolio-slider">
             <div class="portfolio__item">
               <button type="button" class="portfolio__button btn-no-bgc">
@@ -389,8 +388,8 @@
             </div>
           </div>
         </div>
-        <div class="tabcontent" id="interiordesign">
-          <div class="portfolio__list">
+        <div class="tab-item">
+          <div class="portfolio__list portfolio-slider">
             <div class="portfolio__item">
               <button type="button" class="portfolio__button btn-no-bgc ">
                 <svg class="portfolio__icon" width="84" height="84">
@@ -508,171 +507,149 @@
             </div>
           </div>
         </div>
-        <div class="tabcontent" id="decorationwork">
-          <div class="portfolio__list">
-            <div class="portfolio__item">
-              <button type="button" class="portfolio__button btn-no-bgc">
-                <svg class="portfolio__icon" width="84" height="84">
-                  <use x="0" y="0" xlink:href="#icon-plus"></use>
-                </svg>
-              </button>
-              <figure>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/portfolio-slide-1-desktop.webp 1x, img/portfolio-slide-1-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1200px)"
-                    srcset="img/portfolio-slide-1-desktop.jpg 1x, img/portfolio-slide-1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-                </picture>
-                <figcaption class="portfolio__caption">Дизайн интерьера
-                  <br> гостиной</figcaption>
-              </figure>
-              <div class="portfolio__rotate-text">
-                Дизайн интерьеров
+        <div class="tab-item">
+            <div class="portfolio__list portfolio-slider">
+                <div class="portfolio__item">
+                  <button type="button" class="portfolio__button btn-no-bgc ">
+                    <svg class="portfolio__icon" width="84" height="84">
+                      <use x="0" y="0" xlink:href="#icon-plus"></use>
+                    </svg>
+                  </button>
+                  <figure>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/portfolio-slide-3-desktop.webp 1x, img/portfolio-slide-3-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+      
+                      <source media="(min-width: 1200px)"
+                        srcset="img/portfolio-slide-3-desktop.jpg 1x, img/portfolio-slide-3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                      <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                        srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                    </picture>
+                    <figcaption class="portfolio__caption">Лофт интерьер <br>для отеля Hiloft</figcaption>
+                  </figure>
+                  <div class="portfolio__rotate-text">
+                    Дизайн интерьеров
+                  </div>
+                </div>
+                <div class="portfolio__item">
+                  <button type="button" class="portfolio__button btn-no-bgc ">
+                    <svg class="portfolio__icon" width="84" height="84">
+                      <use x="0" y="0" xlink:href="#icon-plus"></use>
+                    </svg>
+                  </button>
+                  <figure>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/portfolio-slide-4-desktop.webp 1x, img/portfolio-slide-4-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+      
+                      <source media="(min-width: 1200px)"
+                        srcset="img/portfolio-slide-4-desktop.jpg 1x, img/portfolio-slide-4-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                      <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                        srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                    </picture>
+                    <figcaption class="portfolio__caption">Дизайн столовой <br>
+                      в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
+                  </figure>
+                  <div class="portfolio__rotate-text">
+                    Дизайн интерьеров
+                  </div>
+                </div>
+                <div class="portfolio__item">
+                  <button type="button" class="portfolio__button btn-no-bgc ">
+                    <svg class="portfolio__icon" width="84" height="84">
+                      <use x="0" y="0" xlink:href="#icon-plus"></use>
+                    </svg>
+                  </button>
+                  <figure>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/portfolio-slide-2-desktop.webp 1x, img/portfolio-slide-2-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+      
+                      <source media="(min-width: 1200px)"
+                        srcset="img/portfolio-slide-2-desktop.jpg 1x, img/portfolio-slide-2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                      <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                        srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                    </picture>
+                    <figcaption class="portfolio__caption">Дизайн столовой <br>
+                      в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
+                  </figure>
+                  <div class="portfolio__rotate-text">
+                    Дизайн интерьеров
+                  </div>
+                </div>
+                <div class="portfolio__item">
+                  <button type="button" class="portfolio__button btn-no-bgc">
+                    <svg class="portfolio__icon" width="84" height="84">
+                      <use x="0" y="0" xlink:href="#icon-plus"></use>
+                    </svg>
+                  </button>
+                  <figure>
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)"
+                        srcset="img/portfolio-slide-1-desktop.webp 1x, img/portfolio-slide-1-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
+      
+                      <source media="(min-width: 1200px)"
+                        srcset="img/portfolio-slide-1-desktop.jpg 1x, img/portfolio-slide-1-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
+                      <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
+                        srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
+                    </picture>
+                    <figcaption class="portfolio__caption">Дизайн интерьера
+                      <br> гостиной</figcaption>
+                  </figure>
+                  <div class="portfolio__rotate-text">
+                    Дизайн интерьеров
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="portfolio__item">
-              <button type="button" class="portfolio__button btn-no-bgc ">
-                <svg class="portfolio__icon" width="84" height="84">
-                  <use x="0" y="0" xlink:href="#icon-plus"></use>
-                </svg>
-              </button>
-              <figure>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/portfolio-slide-2-desktop.webp 1x, img/portfolio-slide-2-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1200px)"
-                    srcset="img/portfolio-slide-2-desktop.jpg 1x, img/portfolio-slide-2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-                </picture>
-                <figcaption class="portfolio__caption">Дизайн столовой <br>
-                  в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
-              </figure>
-              <div class="portfolio__rotate-text">
-                Дизайн интерьеров
-              </div>
-            </div>
-            <div class="portfolio__item">
-              <button type="button" class="portfolio__button btn-no-bgc ">
-                <svg class="portfolio__icon" width="84" height="84">
-                  <use x="0" y="0" xlink:href="#icon-plus"></use>
-                </svg>
-              </button>
-              <figure>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/portfolio-slide-3-desktop.webp 1x, img/portfolio-slide-3-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1200px)"
-                    srcset="img/portfolio-slide-3-desktop.jpg 1x, img/portfolio-slide-3-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-                </picture>
-                <figcaption class="portfolio__caption">Лофт интерьер <br>для отеля Hiloft</figcaption>
-              </figure>
-              <div class="portfolio__rotate-text">
-                Дизайн интерьеров
-              </div>
-            </div>
-            <div class="portfolio__item">
-              <button type="button" class="portfolio__button btn-no-bgc ">
-                <svg class="portfolio__icon" width="84" height="84">
-                  <use x="0" y="0" xlink:href="#icon-plus"></use>
-                </svg>
-              </button>
-              <figure>
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)"
-                    srcset="img/portfolio-slide-4-desktop.webp 1x, img/portfolio-slide-4-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/portfolio-slide-tablet.webp 1x, img/portfolio-slide-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/portfolio-slide-mobile.webp 1x, img/portfolio-slide-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1200px)"
-                    srcset="img/portfolio-slide-4-desktop.jpg 1x, img/portfolio-slide-4-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/portfolio-slide-tablet.jpg 1x, img/portfolio-slide-tablet@2x.jpg 2x">
-                  <img class="portfolio__img" src="img/portfolio-slide-mobile.jpg"
-                    srcset="img/portfolio-slide-mobile@2x.jpg 2x" alt="Brume">
-                </picture>
-                <figcaption class="portfolio__caption">Дизайн столовой <br>
-                  в&nbsp;стиле &laquo;Бохо&raquo;</figcaption>
-              </figure>
-              <div class="portfolio__rotate-text">
-                Дизайн интерьеров
-              </div>
-            </div>
-          </div>
         </div>
-    </div>
+      </div>
+
+      </div> 
+ 
   </section>
 
   <section class="services">
     <div class="container">
       <div class="main-title main-title--section">Наши услуги</div>
 
-  <div class="services__wrapper">
-      	<ul class="tabs-header services__list">
-      		<li class="tab-title services__item" data-state="active">Дизайн отдельных комнат</li>
-      		<li class="tab-title services__item">Дизайн жилого помещения</li>
-      		<li class="tab-title services__item">Дизайн коммерческих объектов</li>
+      <div class="services__wrapper">
+        <ul class="tabs-header services__list">
+          <li class="tab-title services__item" data-state="active">Дизайн отдельных комнат</li>
+          <li class="tab-title services__item">Дизайн жилого помещения</li>
+          <li class="tab-title services__item">Дизайн коммерческих объектов</li>
           <li class="tab-title services__item">Ремонт под ключ</li>
           <li class="tab-title services__item">Отделочные работы</li>
-          <li class="tab-title services__item"> Выезд дизайнера на дом</li>
-      	</ul>
-      	<ul class="tabs-content">
-      		<li class="tab-item">
-            <div class="services__content">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
+          <li class="tab-title services__item">Выезд дизайнера на дом</li>
+        </ul>
 
-                      <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
-                      <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
-                        alt="Brume">
-                    </picture>
-                    <div class="services__quantity">
-                      <div class="services__caption">Дизайн отдельных комнат</div>
-                      <div class="services__number">4 проекта</div>
-                    </div>
-                    <div class="services__info">
-                      <div class="services__desc">
-                        Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
-                        такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
-                      </div>
-                      <button class="primary-button primary-button--transparent text-center">Консультация</button>
-                    </div>
+        <ul class="tabs-content">
 
-                  </div>
-                </li>
-      		<li class="tab-item">
+          <li class="tab-item">
             <div class="services__content">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)"
@@ -681,7 +658,38 @@
                   srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
+                <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
+                  alt="Brume">
+              </picture>
+              <div class="services__quantity">
+                <div class="services__caption">Дизайн отдельных комнат</div>
+                <div class="services__number">4 проекта</div>
+              </div>
+              <div class="services__info">
+                <div class="services__desc">
+                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие
+                  интерьеры
+                  такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
+                </div>
+                <button class="primary-button primary-button--transparent text-center">Консультация</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="tab-item">
+            <div class="services__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)"
+                  srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
                 <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
                   alt="Brume">
@@ -692,41 +700,15 @@
               </div>
               <div class="services__info">
                 <div class="services__desc">
-                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
+                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие
+                  интерьеры
                   такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
                 </div>
                 <button class="primary-button primary-button--transparent text-center">Консультация</button>
               </div>
-
             </div>
-                </li>
-      		<li class="tab-item">
-            <div class="services__content">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)"
-                        srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
+          </li>
 
-                      <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
-                      <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
-                        alt="Brume">
-                    </picture>
-                    <div class="services__quantity">
-                      <div class="services__caption">Дизайн коммерческих объектов</div>
-                      <div class="services__number">48 проектов</div>
-                    </div>
-                    <div class="services__info">
-                      <div class="services__desc">
-                        Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
-                        такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
-                      </div>
-                      <button class="primary-button primary-button--transparent text-center">Консультация</button>
-                    </div>
-
-                  </div></li>
           <li class="tab-item">
             <div class="services__content">
               <picture>
@@ -736,7 +718,38 @@
                   srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
+                <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
+                  alt="Brume">
+              </picture>
+              <div class="services__quantity">
+                <div class="services__caption">Дизайн коммерческих объектов</div>
+                <div class="services__number">48 проектов</div>
+              </div>
+              <div class="services__info">
+                <div class="services__desc">
+                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие
+                  интерьеры
+                  такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
+                </div>
+                <button class="primary-button primary-button--transparent text-center">Консультация</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="tab-item">
+            <div class="services__content">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)"
+                  srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
                 <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
                   alt="Brume">
@@ -747,14 +760,15 @@
               </div>
               <div class="services__info">
                 <div class="services__desc">
-                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
+                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие
+                  интерьеры
                   такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
                 </div>
                 <button class="primary-button primary-button--transparent text-center">Консультация</button>
               </div>
-
             </div>
           </li>
+
           <li class="tab-item">
             <div class="services__content">
               <picture>
@@ -764,7 +778,8 @@
                   srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
                 <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
                   alt="Brume">
@@ -775,15 +790,15 @@
               </div>
               <div class="services__info">
                 <div class="services__desc">
-                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
+                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие
+                  интерьеры
                   такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
                 </div>
                 <button class="primary-button primary-button--transparent text-center">Консультация</button>
               </div>
-
             </div>
-
           </li>
+
           <li class="tab-item">
             <div class="services__content">
               <picture>
@@ -793,7 +808,8 @@
                   srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
                 <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
                   alt="Brume">
@@ -804,205 +820,19 @@
               </div>
               <div class="services__info">
                 <div class="services__desc">
-                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
+                  Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие
+                  интерьеры
                   такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
                 </div>
                 <button class="primary-button primary-button--transparent text-center">Консультация</button>
               </div>
-
             </div>
-
           </li>
-      	</ul>
-</div>
-<!--
 
-      	<div class="tabs-header">
-      		<span class="tab-title">First</span>
-      		<span class="tab-title" data-state="active">Second</span>
-      		<span class="tab-title">Third</span>
-      	</div>
-      	<div class="tabs-content">
-      		<div class="tab-item">Lorem, ipsum.</div>
-      		<div class="tab-item">Lorem, ipsum dolor.</div>
-      		<div class="tab-item">Lorem ipsum dolor sit amet.</div>
-      	</div> -->
-
-
-      <div class="services__wrapper">
-        <ul class="services__list">
-          <!-- <li class="services__item"><a class="services__link" onclick="openTab(event, 'livingrooms')"
-              id="defaultOpen">Дизайн отдельных комнат</a></li>
-          <li class="services__item"><a class="services__link" onclick="openTab(event, 'rooms')">Дизайн жилого
-              помещения</a></li>
-          <li class="services__item"><a class="services__link" onclick="openTab(event, 'commercial')">Дизайн
-              коммерческих объектов</a></li>
-          <li class="services__item"><a class="services__link" onclick="openTab(event, 'repair')">Ремонт под ключ</a>
-          </li> -->
-          <!-- <li class="services__item"><a class="services__link" onclick="openTab(event, 'completion-work')">Отделочные
-              работы</a></li> -->
-          <!-- <li class="services__item"><a class="services__link" onclick="openTab(event, 'departure')">Выезд дизайнера на
-              дом</a></li> -->
         </ul>
 
-        <!-- <div class="services__content tabcontent" id="livingrooms">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
-            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
-              alt="Brume">
-          </picture>
-          <div class="services__quantity">
-            <div class="services__caption">Дизайн отдельных комнат</div>
-            <div class="services__number">4 проекта</div>
-          </div>
-          <div class="services__info">
-            <div class="services__desc">
-              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
-              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
-            </div>
-            <button class="primary-button primary-button--transparent text-center">Консультация</button>
-          </div>
-
-        </div> -->
-<!--
-        <div class="services__content tabcontent" id="rooms">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
-            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
-              alt="Brume">
-          </picture>
-          <div class="services__quantity">
-            <div class="services__caption">Дизайн жилого помещения</div>
-            <div class="services__number">100 проектов</div>
-          </div>
-          <div class="services__info">
-            <div class="services__desc">
-              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
-              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
-            </div>
-            <button class="primary-button primary-button--transparent text-center">Консультация</button>
-          </div>
-
-        </div> -->
-        <!-- <div class="services__content tabcontent" id="repair">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
-            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
-              alt="Brume">
-          </picture>
-          <div class="services__quantity">
-            <div class="services__caption">Ремонт под ключ</div>
-            <div class="services__number">138 проектов</div>
-          </div>
-          <div class="services__info">
-            <div class="services__desc">
-              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
-              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
-            </div>
-            <button class="primary-button primary-button--transparent text-center">Консультация</button>
-          </div>
-
-        </div> -->
-        <!-- <div class="services__content tabcontent" id="commercial">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
-            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
-              alt="Brume">
-          </picture>
-          <div class="services__quantity">
-            <div class="services__caption">Дизайн коммерческих объектов</div>
-            <div class="services__number">48 проектов</div>
-          </div>
-          <div class="services__info">
-            <div class="services__desc">
-              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
-              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
-            </div>
-            <button class="primary-button primary-button--transparent text-center">Консультация</button>
-          </div>
-
-        </div> -->
-        <!-- <div class="services__content tabcontent" id="completion-work">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
-            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
-              alt="Brume">
-          </picture>
-          <div class="services__quantity">
-            <div class="services__caption">Отделочные работы</div>
-            <div class="services__number">20 проектов</div>
-          </div>
-          <div class="services__info">
-            <div class="services__desc">
-              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
-              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
-            </div>
-            <button class="primary-button primary-button--transparent text-center">Консультация</button>
-          </div>
-
-        </div> -->
-        <!-- <div class="services__content tabcontent" id="departure">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="img/services-desktop.webp 1x, img/services-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/services-tablet.webp 1x, img/services-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/services-mobile.webp 1x, img/services-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1200px)" srcset="img/services-desktop.jpg 1x, img/services-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/services-tablet.jpg 1x, img/services-tablet@2x.jpg 2x">
-            <img class="services__img img" src="img/services-mobile.jpg" srcset="img/services-mobile@2x.jpg 2x"
-              alt="Brume">
-          </picture>
-          <div class="services__quantity">
-            <div class="services__caption">Выезд дизайнера на дом</div>
-            <div class="services__number">159 проектов</div>
-          </div>
-          <div class="services__info">
-            <div class="services__desc">
-              Работая с&nbsp;коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры
-              такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в&nbsp;интерьер снова и&nbsp;снова.
-            </div>
-            <button class="primary-button primary-button--transparent text-center">Консультация</button>
-          </div>
-
-        </div> -->
       </div>
+
     </div>
   </section>
 
@@ -1112,7 +942,8 @@
         <div>
           <div class="review__card">
             <picture>
-              <source class="review__img img" type="image/webp" srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
+              <source class="review__img img" type="image/webp"
+                srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
               <img class="review__img img" src="img/review-mobile.jpg" srcset="img/review-mobile@2x.jpg 2x"
                 alt="Александра Холодная">
             </picture>
@@ -1120,7 +951,8 @@
               <div class="review__caption">Александра Холодная<br>
                 <span>Услуга: "Интерьер детской"</span></div>
               <div class="review__text">
-                Спасибо студии за&nbsp;замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и&nbsp;легко,
+                Спасибо студии за&nbsp;замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро
+                и&nbsp;легко,
                 команда
                 выполнила все точно в&nbsp;срок, сделали все как мы&nbsp;и&nbsp;хотели.
                 В&nbsp;следующий раз обратимся к&nbsp;BRUME!
@@ -1132,7 +964,8 @@
         <div>
           <div class="review__card">
             <picture>
-              <source class="review__img img" type="image/webp" srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
+              <source class="review__img img" type="image/webp"
+                srcset="img/review-mobile.webp 1x, img/review-mobile@2x.webp 2x">
               <img class="review__img img" src="img/review-mobile.jpg" srcset="img/review-mobile@2x.jpg 2x"
                 alt="Александра Холодная">
             </picture>
@@ -1140,7 +973,8 @@
               <div class="review__caption">Александра Холодная<br>
                 <span>Услуга: "Интерьер детской"</span></div>
               <div class="review__text">
-                Спасибо студии за&nbsp;замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и&nbsp;легко,
+                Спасибо студии за&nbsp;замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро
+                и&nbsp;легко,
                 команда
                 выполнила все точно в&nbsp;срок, сделали все как мы&nbsp;и&nbsp;хотели.
                 В&nbsp;следующий раз обратимся к&nbsp;BRUME!
@@ -1150,7 +984,7 @@
         </div>
 
       </div>
-      </div>
+    </div>
     </div>
   </section>
 
@@ -1217,7 +1051,15 @@
     });
     var slider = tns({
       "container": ".portfolio-slider",
-      "items": 4,
+      "items": 1,
+      "responsive": {
+          "500": {
+            "items": 2
+          },
+          "768": {
+            "items": 4
+          },
+        },
       "mouseDrag": true,
       "rewind": true,
       "speed": 900,

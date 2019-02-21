@@ -1,9 +1,5 @@
 .portfolio {
   &__tab {
-    padding: 5px 0;
-    cursor: pointer;
-  }
-  &__link {
     font-family: $raleway-light;
     font-size: 1.3rem;
     font-weight: 600;
@@ -14,10 +10,11 @@
     &:hover {
       color: $hover-link;
     }
-    &.active {
+    &.is-showed {
       color: #000;
     }
   }
+
   &__img {
     width: 100%;
 
@@ -33,15 +30,18 @@
   &__rotate-text {
     display: none;
   }
-}
 
-.tns {
-  &-outer {
-    button {
-      display: none;
+  .tab-item {
+    display: none;
+    &.is-showed {
+      display: block;
     }
   }
+  .tns-outer [data-action] {
+    display: none;
+  }
 }
+
 @media ($screen-m) {
  .portfolio {
    .main-title {

@@ -16,38 +16,24 @@
   }
 
   &__item {
-    padding: 5px 0;
-    cursor: pointer;
-  }
-
-  &__link {
     display: block;
     font-family: $raleway-light;
-    font-size: 1.3rem;
+    font-size: 12px;
     font-weight: 600;
     color: $tab-grey;
     line-height: 2.5rem;
     @include transition-animation;
+
+    padding: 5px 0;
+    cursor: pointer;
     &:hover {
       color: $hover-link;
     }
-    &.is-showed {
-      padding-left: 20px;
-      color: #000;
-    }
   }
+
   &__quantity {
     display: none;
   }
-
-  .tabs-wrapper {
-    margin: 10px;
-  }
-
-  .tabs-content {
-    padding: 15px;
-  }
-
 
   .tab-item {
     display: none;
@@ -62,17 +48,12 @@
   .tab-item.is-showed {
     display: block;
   }
-
 }
-
-
 
 @media ($screen-m) {
   .services {
     &__item {
-      width: 50%;
-
-      margin-bottom: 20px;
+      margin-right: 20px;
     }
     &__list {
       display: flex;
@@ -93,16 +74,12 @@
       display: block;
     }
     &__item {
-      width: auto;
-      margin-right: 30px;
-      width: 250px;
+      width: 200px;
+      box-sizing: border-box;
     }
     &__info {
       display: flex;
       align-items:center;
-    }
-    &__content {
-      width: 95%;
     }
     .primary-button {
       padding: 19px 30px;
