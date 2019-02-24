@@ -89,6 +89,14 @@ gulp.task("scripts", function() {
     .pipe(gulp.dest("build/js")); //Скидываем в build/js
 });
 
+/*
+gulp.task('js-libs', function () {
+  gulp.src('/node_modules/mediabox/mediabox.js')
+   .pipe(gulp.dest('build/js'));
+});
+
+*/
+
 // Таск для очистки папки
 gulp.task("clean", function () {
   return del("build"); // Удаляем папку build
