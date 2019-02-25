@@ -64,4 +64,3 @@ const activateTab = e => {
 [].forEach.call(tabsHeader, el => {
     el.addEventListener('click', activateTab);
 });
-

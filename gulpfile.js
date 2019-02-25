@@ -90,11 +90,15 @@ gulp.task("scripts", function() {
 });
 
 /*
-gulp.task('js-libs', function () {
-  gulp.src('/node_modules/mediabox/mediabox.js')
-   .pipe(gulp.dest('build/js'));
+gulp.task('mediabox-js', function () {
+  return gulp.src('/node_modules/mediabox/dist/mediabox.min.js
+              .pipe(gulp.dest('build/js'));
 });
 
+gulp.task('mediabox-css', function () {
+  return gulp.src('/node_modules/mediabox/dist/mediabox.css
+              .pipe(gulp.dest('build/css'));
+});
 */
 
 // Таск для очистки папки
