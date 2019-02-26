@@ -81,25 +81,9 @@ gulp.task("scripts", function() {
       .pipe(concat("script.js")) // Склеиваем их в один scripts.js
       .pipe(gulp.dest("build/js")) // Складываем build/js
       .pipe(rename("script.min.js")) // Переименовываем в scripts.min.js
-      .pipe(babel({
-        presets: ['@babel/env'] // Прогоняем через babel. Переводит ES6+ в ES5
-      }))
-      .pipe(uglify()) // Минифицируем
     .pipe(srcmaps.write())
     .pipe(gulp.dest("build/js")); //Скидываем в build/js
 });
-
-/*
-gulp.task('mediabox-js', function () {
-  return gulp.src('/node_modules/mediabox/dist/mediabox.min.js
-              .pipe(gulp.dest('build/js'));
-});
-
-gulp.task('mediabox-css', function () {
-  return gulp.src('/node_modules/mediabox/dist/mediabox.css
-              .pipe(gulp.dest('build/css'));
-});
-*/
 
 // Таск для очистки папки
 gulp.task("clean", function () {
