@@ -5,7 +5,10 @@
   background-color: $blue;
 
   .socials {
+    display: flex;
+    justify-content: center;
     a {
+      display: block;
       &:nth-child(2) {
         margin: 0px 70px;
       }

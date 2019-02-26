@@ -45,7 +45,7 @@ const showContent = () => {
 		};
 	};
 };
-// Отображаем установленные по умолчанию табы при загрузке
+
 showContent();
 
 const activateTab = e => {
